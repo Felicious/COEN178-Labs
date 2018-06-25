@@ -1,0 +1,561 @@
+SQL> describe Staff_2010;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ LAST                                               VARCHAR2(20)
+ FIRST                                              VARCHAR2(20)
+ STATUS                                             VARCHAR2(20)
+ SALARY                                             NUMBER(10,2)
+ SALARY_TYPE                                        VARCHAR2(40)
+ TITLE                                              VARCHAR2(200)
+
+SQL> Select First ||' '|| Last AS Fullname from Staff_2010
+  2  where salary IN (Select MAX(salary) from Staff_2010);
+
+FULLNAME                                                                        
+-----------------------------------------                                       
+ Michael M. Hash                                                                
+ Timothy P. Love                                                                
+
+SQL> Select First ||' '|| Last AS Fullname from Staff_2010
+  2  where salary = (Select MAX(salary) from Staff_2010);
+
+FULLNAME                                                                        
+-----------------------------------------                                       
+ Michael M. Hash                                                                
+ Timothy P. Love                                                                
+
+SQL> Select First ||' '|| Last AS Fullname, salary from Staff_2010
+  2  where salary IN (Select MAX(salary) from Staff_2010);
+
+FULLNAME                                      SALARY                            
+----------------------------------------- ----------                            
+ Michael M. Hash                              179700                            
+ Timothy P. Love                              179700                            
+
+SQL> Select First ||' '|| Last AS Fullname, salary from Staff_2010
+  2  where salary = (Select MAX(salary) from Staff_2010);
+
+FULLNAME                                      SALARY                            
+----------------------------------------- ----------                            
+ Michael M. Hash                              179700                            
+ Timothy P. Love                              179700                            
+
+SQL> Select last, salary from Staff_2010 where salary =
+  2  (Select salary from Staff_2010 where lower(last) = 'zichal');
+
+LAST                     SALARY                                                 
+-------------------- ----------                                                 
+Simas                    100000                                                 
+Teehee                   100000                                                 
+Bhowmik                  100000                                                 
+DuBois                   100000                                                 
+Frankel                  100000                                                 
+Hurwitz                  100000                                                 
+Jarvis-Shean             100000                                                 
+Jones                    100000                                                 
+Vega                     100000                                                 
+Zichal                   100000                                                 
+
+10 rows selected.
+
+SQL> Select last, salary from Staff_2010 where salary IN
+  2  (Select salary from Staff_2010 where lower(last) = 'young');
+
+LAST                     SALARY                                                 
+-------------------- ----------                                                 
+Pope                      42000                                                 
+Portilla                  42000                                                 
+Posey                     42000                                                 
+Pulliam                   42000                                                 
+Robertson                 42000                                                 
+Schaub                    42000                                                 
+Schmuck                   42000                                                 
+Sinha                     42000                                                 
+Sirbu                     42000                                                 
+Smith                     42000                                                 
+Smith                     42000                                                 
+
+LAST                     SALARY                                                 
+-------------------- ----------                                                 
+Stickel                   42000                                                 
+Swanson                   42000                                                 
+Alley                     42000                                                 
+Asen                      42000                                                 
+Attili                    58511                                                 
+Ayling                    42000                                                 
+Baggetto                  42000                                                 
+Bates                     42000                                                 
+Bisi                      42000                                                 
+Block                     42000                                                 
+Campbell                  42000                                                 
+
+LAST                     SALARY                                                 
+-------------------- ----------                                                 
+Campos                    42000                                                 
+Canery                    58511                                                 
+Carden                    42000                                                 
+Castillo                  42000                                                 
+Chhabra                   42000                                                 
+Claude                    58511                                                 
+Cobbina                   42000                                                 
+Conrad                    42000                                                 
+Cuba                      42000                                                 
+Cunningham                42000                                                 
+Donovan                   42000                                                 
+
+LAST                     SALARY                                                 
+-------------------- ----------                                                 
+Dorsett                   42000                                                 
+Faulman                   42000                                                 
+Fenn                      42000                                                 
+Fergenson                 42000                                                 
+Ford                      42000                                                 
+Frank                     42000                                                 
+Godfrey                   42000                                                 
+Gottlieb                  42000                                                 
+Grant                     42000                                                 
+Hanson                    42000                                                 
+Harris                    42000                                                 
+
+LAST                     SALARY                                                 
+-------------------- ----------                                                 
+Hegde                     42000                                                 
+Hernandez                 42000                                                 
+Hiatt                     42000                                                 
+Hughes                    42000                                                 
+Jackson                   42000                                                 
+Jones                     42000                                                 
+Kennedy                   42000                                                 
+Ledbetter                 42000                                                 
+Lee                       42000                                                 
+Lewin                     42000                                                 
+Lewis                     42000                                                 
+
+LAST                     SALARY                                                 
+-------------------- ----------                                                 
+Limon                     42000                                                 
+Metcalf                   42000                                                 
+Mrazek                    42000                                                 
+Northern                  42000                                                 
+Ocampo                    42000                                                 
+Oxtoby                    42000                                                 
+Page                      42000                                                 
+Tennison                  42000                                                 
+Thomas                    42000                                                 
+Tranchin                  42000                                                 
+Young                     42000                                                 
+
+LAST                     SALARY                                                 
+-------------------- ----------                                                 
+Young                     58511                                                 
+
+67 rows selected.
+
+SQL> 
+SQL> Select salary from Staff_2010 where lower(last) = 'young';
+
+    SALARY                                                                      
+----------                                                                      
+     42000                                                                      
+     58511                                                                      
+
+SQL> Select count(salary) from Staff_2010 where salary > 100,000;
+Select count(salary) from Staff_2010 where salary > 100,000
+                                                       *
+ERROR at line 1:
+ORA-00933: SQL command not properly ended 
+
+
+SQL> Select count(salary) from Staff_2010 where salary > 100,000;
+Select count(salary) from Staff_2010 where salary > 100,000
+                                                       *
+ERROR at line 1:
+ORA-00933: SQL command not properly ended 
+
+
+SQL> Select count(salary) from Staff_2010 where salary > 100000;
+
+COUNT(SALARY)                                                                   
+-------------                                                                   
+          140                                                                   
+
+SQL> Select salary, count(salary) AS SALARIES_100K_ABOVE
+  2  from Staff_2010 group by count(salary) where salary > 100000;
+from Staff_2010 group by count(salary) where salary > 100000
+                         *
+ERROR at line 2:
+ORA-00934: group function is not allowed here 
+
+
+SQL> Select salary, count(salary) AS SALARIES_100K_ABOVE
+  2  from Staff_2010 where salary > 100000 group by count(salary);
+from Staff_2010 where salary > 100000 group by count(salary)
+                                               *
+ERROR at line 2:
+ORA-00934: group function is not allowed here 
+
+
+SQL> Select salary, count(salary) AS SALARIES_100K_ABOVE
+  2  from Staff_2010 where salary > 100000;
+Select salary, count(salary) AS SALARIES_100K_ABOVE
+       *
+ERROR at line 1:
+ORA-00937: not a single-group group function 
+
+
+SQL> Select salary, count(salary) AS SALARIES_100K_ABOVE
+  2  from Staff_2010 where salary > 100000 group by salary;
+
+    SALARY SALARIES_100K_ABOVE                                                  
+---------- -------------------                                                  
+    158500                   9                                                  
+    155500                   5                                                  
+    112774                   1                                                  
+    102000                   9                                                  
+    145000                   1                                                  
+    113000                   5                                                  
+    136134                   1                                                  
+    130000                   6                                                  
+    139500                   1                                                  
+    153500                   2                                                  
+    129758                   1                                                  
+
+    SALARY SALARIES_100K_ABOVE                                                  
+---------- -------------------                                                  
+    165000                   1                                                  
+    162500                   1                                                  
+    100904                   2                                                  
+    130500                  27                                                  
+    149000                   2                                                  
+    114000                   3                                                  
+    172200                  23                                                  
+    123758                   1                                                  
+    147500                   4                                                  
+    162900                   1                                                  
+    115731                   1                                                  
+
+    SALARY SALARIES_100K_ABOVE                                                  
+---------- -------------------                                                  
+    172000                   1                                                  
+    110500                   1                                                  
+    122744                   1                                                  
+    140259                   1                                                  
+    106839                   1                                                  
+    132009                   1                                                  
+    113605                   1                                                  
+    148510                   2                                                  
+    153300                   1                                                  
+    126251                   1                                                  
+    115000                   1                                                  
+
+    SALARY SALARIES_100K_ABOVE                                                  
+---------- -------------------                                                  
+    150000                   3                                                  
+    144868                   1                                                  
+    120000                   8                                                  
+    107770                   1                                                  
+    140000                   2                                                  
+    105211                   1                                                  
+    179700                   2                                                  
+    110000                   2                                                  
+    102829                   1                                                  
+
+42 rows selected.
+
+SQL> 
+SQL> ;
+  1  Select salary, count(salary) AS SALARIES_100K_ABOVE
+  2* from Staff_2010 where salary > 100000 group by salary
+SQL> Select salary, count(salary) AS SALARIES_100K_ABOVE, count(count(salary))
+  2  from Staff_2010 where salary > 100000 group by salary;
+Select salary, count(salary) AS SALARIES_100K_ABOVE, count(count(salary))
+       *
+ERROR at line 1:
+ORA-00937: not a single-group group function 
+
+
+SQL> Select salary, count(salary) SALARIES_100K_ABOVE,
+  2  count(SALARIES_100K_ABOVE)No
+  3  from Staff_2010 where salary > 100000 group by salary having No >= 10;
+from Staff_2010 where salary > 100000 group by salary having No >= 10
+                                                             *
+ERROR at line 3:
+ORA-00904: "NO": invalid identifier 
+
+
+SQL> Select salary, count(salary) SALARIES_100K_ABOVE,
+  2  count(SALARIES_100K_ABOVE)Num
+  3  from Staff_2010 where salary > 100000 group by salary having Num >= 10;
+from Staff_2010 where salary > 100000 group by salary having Num >= 10
+                                                             *
+ERROR at line 3:
+ORA-00904: "NUM": invalid identifier 
+
+
+SQL> Select salary, count(salary) SALARIES_100K_ABOVE,
+  2  count(SALARIES_100K_ABOVE) Num
+  3  from Staff_2010 where salary > 100000 group by salary having Num >= 10;
+from Staff_2010 where salary > 100000 group by salary having Num >= 10
+                                                             *
+ERROR at line 3:
+ORA-00904: "NUM": invalid identifier 
+
+
+SQL> Select salary, count(salary) AS SALARIES_100K_ABOVE,
+  2  from Staff_2010 where salary > 100000 group by salary having count(salary) >= 10;
+from Staff_2010 where salary > 100000 group by salary having count(salary) >= 10
+*
+ERROR at line 2:
+ORA-00936: missing expression 
+
+
+SQL> Select salary, count(salary) AS SALARIES_100K_ABOVE,
+  2  from Staff_2010 where salary > 100000
+  3  group by salary having count(salary) >= 10;
+from Staff_2010 where salary > 100000
+*
+ERROR at line 2:
+ORA-00936: missing expression 
+
+
+SQL> Select salary, count(salary) AS SALARIES_100K_ABOVE,
+  2  from Staff_2010 where salary > 100000
+  3  group by salary having count(salary) > 10;
+from Staff_2010 where salary > 100000
+*
+ERROR at line 2:
+ORA-00936: missing expression 
+
+
+SQL> Select salary, count(salary) AS SALARIES_100K_ABOVE
+  2  from Staff_2010 where salary > 100000
+  3  group by salary having count(salary) >= 10;
+
+    SALARY SALARIES_100K_ABOVE                                                  
+---------- -------------------                                                  
+    130500                  27                                                  
+    172200                  23                                                  
+
+SQL> SELECT lastFROM Staff_2010WHERE REGEXP_LIKE ;
+SELECT lastFROM Staff_2010WHERE REGEXP_LIKE 
+                                *
+ERROR at line 1:
+ORA-00923: FROM keyword not found where expected 
+
+
+SQL> SELECT last FROM Staff_2010
+  2  WHERE REGEXP_LIKE (last, '([aeiou])\1', 'i');
+
+LAST                                                                            
+--------------------                                                            
+Reed                                                                            
+Reeves                                                                          
+Sheehy                                                                          
+Smoot                                                                           
+Sweeney                                                                         
+Teehee                                                                          
+Bookey-Baker                                                                    
+Brooke                                                                          
+Deese                                                                           
+Freeman                                                                         
+Goodman                                                                         
+
+LAST                                                                            
+--------------------                                                            
+Goodman                                                                         
+Green                                                                           
+Green                                                                           
+Greenawalt                                                                      
+Greene                                                                          
+Keenan                                                                          
+Koo                                                                             
+Lee                                                                             
+Lee                                                                             
+Phillips, III                                                                   
+Thomas, III                                                                     
+
+LAST                                                                            
+--------------------                                                            
+Voorman                                                                         
+
+23 rows selected.
+
+SQL> Select deptId AS deptno, count(*) AS empcount
+  2  from L_EMP group by deptId;
+
+DEPTN   EMPCOUNT                                                                
+----- ----------                                                                
+d1             4                                                                
+d2             1                                                                
+d3             2                                                                
+
+SQL> Select count(deptId) deptno, deptname, count(empNo) AS empcount from
+  2  (Select deptId AS deptno, count(*) AS empcount
+  3  from L_EMP group by deptId), L_DEPT
+  4  where deptno = L_DEPT.deptId;
+Select count(deptId) deptno, deptname, count(empNo) AS empcount from
+                                             *
+ERROR at line 1:
+ORA-00904: "EMPNO": invalid identifier 
+
+
+SQL> Select count(deptId) deptno, deptname, count(empNo) AS empcount from
+  2  (Select deptId AS deptno, count(*) from L_EMP group by deptId), L_DEPT
+  3  where deptno = L_DEPT.deptId;
+Select count(deptId) deptno, deptname, count(empNo) AS empcount from
+                                             *
+ERROR at line 1:
+ORA-00904: "EMPNO": invalid identifier 
+
+
+SQL> Select count(deptId) deptno, deptname, count(L_EMP.empNo) AS empcount from
+  2  (Select deptId AS deptno, count(*) from L_EMP group by deptId), L_DEPT
+  3  where deptno = L_DEPT.deptId;
+Select count(deptId) deptno, deptname, count(L_EMP.empNo) AS empcount from
+                                             *
+ERROR at line 1:
+ORA-00904: "L_EMP"."EMPNO": invalid identifier 
+
+
+SQL> describe L_EMP;
+ Name                                      Null?    Type
+ ----------------------------------------- -------- ----------------------------
+ EMPNO                                     NOT NULL NUMBER(38)
+ EMPNAME                                            CHAR(10)
+ DEPTID                                             CHAR(5)
+
+SQL> Select count(deptId) deptno, deptname, count(*) AS empcount from
+  2  (Select deptId AS deptno, count(*) from L_EMP group by deptId), L_DEPT
+  3  where deptno = L_DEPT.deptId;
+Select count(deptId) deptno, deptname, count(*) AS empcount from
+                             *
+ERROR at line 1:
+ORA-00937: not a single-group group function 
+
+
+SQL> Select count(deptId) deptno, deptname, empcount from
+  2  (Select deptId AS deptno, count(*)empcount from L_EMP group by deptId), L_DEPT
+  3  where deptno = L_DEPT.deptId group by deptId;
+Select count(deptId) deptno, deptname, empcount from
+                             *
+ERROR at line 1:
+ORA-00979: not a GROUP BY expression 
+
+
+SQL> Select deptno, deptname, empcount from
+  2  (Select deptId AS deptno, count(*) AS empcount
+  3  from L_EMP group by deptId), L_DEPT
+  4  where deptno = L_DEPT.deptid;
+
+DEPTN DEPTNAME     EMPCOUNT                                                     
+----- ---------- ----------                                                     
+d1    Research            4                                                     
+d2    Devt                1                                                     
+d3    Testing             2                                                     
+
+SQL> Select deptno, deptname, empcount from
+  2  (Select deptId AS deptno, count(*) AS empcount
+  3  from L_EMP group by deptId), L_DEPT
+  4  where deptno = L_DEPT.deptid
+  5  order by empcount;
+
+DEPTN DEPTNAME     EMPCOUNT                                                     
+----- ---------- ----------                                                     
+d2    Devt                1                                                     
+d3    Testing             2                                                     
+d1    Research            4                                                     
+
+SQL> Select deptid from L_EMP Group by deptidHaving count(*) = (Select count(*) from L_EMP Group by deptid);
+Select deptid from L_EMP Group by deptidHaving count(*) = (Select count(*) from L_EMP Group by deptid)
+                                               *
+ERROR at line 1:
+ORA-00933: SQL command not properly ended 
+
+
+SQL> Select deptid from L_EMP Group by deptid Having count(*) = (Select count(*) from L_EMP Group by deptid);
+Select deptid from L_EMP Group by deptid Having count(*) = (Select count(*) from L_EMP Group by deptid)
+                                                            *
+ERROR at line 1:
+ORA-01427: single-row subquery returns more than one row 
+
+
+SQL> Select deptid from L_EMP Group by deptid
+  2  Having count(*) ALL (Select count(*) from L_EMP Group by deptid);
+Having count(*) ALL (Select count(*) from L_EMP Group by deptid)
+                *
+ERROR at line 2:
+ORA-00920: invalid relational operator 
+
+
+SQL> Select deptid from L_EMP Group by deptid
+  2  Having count ALL (Select count(*) from L_EMP Group by deptid);
+Having count ALL (Select count(*) from L_EMP Group by deptid)
+             *
+ERROR at line 2:
+ORA-00920: invalid relational operator 
+
+
+SQL> Select count(*) from L_EMP Group by deptid
+  2  ;
+
+  COUNT(*)                                                                      
+----------                                                                      
+         4                                                                      
+         1                                                                      
+         2                                                                      
+
+SQL> Select deptid from L_EMP Group by deptid
+  2  Having count(*) >= ALL (Select count(*) from L_EMP Group by deptid);
+
+DEPTI                                                                           
+-----                                                                           
+d1                                                                              
+
+SQL> Select deptname from
+  2  (Select *  from L_EMP Group by deptid
+  3  Having count(*) >= ALL (Select count(*) from L_EMP Group by deptid));
+Select deptname from
+       *
+ERROR at line 1:
+ORA-00904: "DEPTNAME": invalid identifier 
+
+
+SQL> Select deptname from
+  2  (Select deptid AS angfds from L_EMP Group by deptid
+  3  Having count(*) >= ALL (Select count(*) from L_EMP Group by deptid)), L_DEPT
+  4  where angfds=deptid;
+
+DEPTNAME                                                                        
+----------                                                                      
+Research                                                                        
+
+SQL> Select * from L_EMP NATURAL JOIN L_DEPT;
+
+DEPTI      EMPNO EMPNAME    DEPTNAME                                            
+----- ---------- ---------- ----------                                          
+d1             6 chen       Research                                            
+d1             3 wayne      Research                                            
+d1             1 smith      Research                                            
+d1             5 king       Research                                            
+d2             2 jones      Devt                                                
+d3             7 winger     Testing                                             
+d3             4 moor       Testing                                             
+
+7 rows selected.
+
+SQL> Select L_EMP.deptid, empno, empname, deptname
+  2  from L_EMP, L_DEPT where L_EMP.deptid = L_DEPT.deptid;
+
+DEPTI      EMPNO EMPNAME    DEPTNAME                                            
+----- ---------- ---------- ----------                                          
+d1             6 chen       Research                                            
+d1             3 wayne      Research                                            
+d1             1 smith      Research                                            
+d1             5 king       Research                                            
+d2             2 jones      Devt                                                
+d3             7 winger     Testing                                             
+d3             4 moor       Testing                                             
+
+7 rows selected.
+
+SQL> spool off;

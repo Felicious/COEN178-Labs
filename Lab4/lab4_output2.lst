@@ -1,0 +1,1231 @@
+SQL> @/DCNFS/users/student/fkuan/Documents/COEN178/labs/lab4/q7_query.sql;
+ 19  
+ 20  
+ 21  ;
+ 22  
+SQL> select * from AlphaCoEmp;
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Perez                                               91159                       
+Utech                                               64137                       
+Vega                                                60112                       
+Whitty                                              91365                       
+Wilson                                              87394                       
+Psaki                                               85217                       
+Reinstein                                           67373                       
+Roche                                               81291                       
+Rouse                                               79413                       
+Sathe                                               98136                       
+Schulman                                            88779                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Seymour                                             95628                       
+Shapiro                                             60797                       
+Shaw                                                68742                       
+Sher                                                51441                       
+Showers                                             62806                       
+Siegel                                              99925                       
+Sirbu                                               98182                       
+Stephens                                            71689                       
+Sutton                                              86638                       
+Adams                                               79786                       
+Alley                                               95235                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Anello                                              61903                       
+Barnes                                              64326                       
+Bates                                               93301                       
+Bedingfield                                         91778                       
+Chaifetz                                            78757                       
+Clarke                                              97201                       
+Cobbina                                             57766                       
+Crutchfield                                         52062                       
+Dalheim                                             82734                       
+Ealons                                              73526                       
+Escobar                                             95984                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Farrell                                             77259                       
+Gaspard                                             80267                       
+Groth                                               62156                       
+Heimbach                                            91486                       
+Jawando                                             60307                       
+Kennedy                                             92356                       
+Konwinski                                           91932                       
+Lewis                                               57814                       
+Liddell-Westefeld                                   88885                       
+Limon                                               63486                       
+Loeb                                                56160                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+London                                              59607                       
+Maher                                               72451                       
+Messina                                             66430                       
+Monje, Jr.                                          63415                       
+Newell                                              60277                       
+Nicholson, Jr.                                      85703                       
+Noel                                                93870                       
+Oleske                                              78186                       
+Page                                                89244                       
+Terry                                               70588                       
+Vanderslice                                         62247                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Wear                                                87771                       
+White                                               92497                       
+Yeager Kaplan                                       80371                       
+Young, Jr.                                          52787                       
+Quinn                                               63717                       
+Raizk                                               87279                       
+Reed                                                50106                       
+Ryan                                                54817                       
+Sahgal                                              75398                       
+Sass                                                75395                       
+Schafer                                             69046                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Schwartz                                            57784                       
+Sibley                                              52284                       
+Singiser                                            79049                       
+Starkey                                             93798                       
+Swanson                                             54738                       
+Tamarin                                             57739                       
+Tchen                                               87067                       
+Agnew                                               85176                       
+Bauer                                               92799                       
+Beliveau                                            89393                       
+Bhowmik                                             67686                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Brennan                                             78333                       
+Buffett                                             77741                       
+Carrier                                             53577                       
+Cherlin                                             77481                       
+Cizner                                              72627                       
+Cokley                                              75387                       
+Colvin                                              97011                       
+Cuellar                                             72650                       
+Cutter                                              94981                       
+Deese                                               61297                       
+Dillon                                              88481                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Donilon                                             57631                       
+Dorsett                                             83054                       
+Fernandez                                           75873                       
+Frank                                               78765                       
+Frankel                                             60413                       
+Frye                                                97173                       
+Gonzalez                                            67329                       
+Graham                                              83209                       
+Hoang                                               57932                       
+Hopkins                                             71270                       
+Inouye                                              58444                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Johnson                                             88656                       
+Kelleher, Jr.                                       66249                       
+Larus                                               71168                       
+Lynn                                                71154                       
+Mackey                                              97344                       
+McCarthy                                            70878                       
+McGinnis                                            86668                       
+McGuire                                             67579                       
+Mosteller                                           56931                       
+Mueller                                             98920                       
+Murtha                                              89988                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Onek                                                91349                       
+Papas                                               69978                       
+Parker                                              52998                       
+Paulsen                                             78174                       
+Phillips, III                                       60728                       
+Turton                                              59929                       
+Voorman                                             95087                       
+Watson                                              66114                       
+Wright                                              63879                       
+Pojman                                              83026                       
+Pope                                                52100                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Rodriguez                                           83657                       
+Sutphen                                             81049                       
+Asen                                                89462                       
+Belive                                              90971                       
+Browner                                             72067                       
+Brundage                                            90948                       
+Brush                                               94999                       
+Cardwell                                            56446                       
+Chen                                                51243                       
+Chiodo                                              78048                       
+Corrigan                                            83935                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Crowley                                             99500                       
+Davies                                              98895                       
+Devine                                              50921                       
+Edgerton                                            98359                       
+Edmonds                                             59295                       
+Eisen                                               92966                       
+Espinel                                             53942                       
+Favreau                                             71570                       
+Gardaphe                                            84969                       
+Gillette                                            52645                       
+Gomez                                               58459                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Gottry                                              60628                       
+Grant                                               61228                       
+Green                                               86601                       
+Harper                                              88694                       
+Hughes                                              55500                       
+Hurwitz                                             63287                       
+Juska                                               81208                       
+Kammerer                                            66235                       
+Kimball                                             60032                       
+Kommareddi                                          54927                       
+Kravis                                              89493                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+LaBolt                                              78118                       
+Lerner                                              57220                       
+Lewin                                               93235                       
+Lippert                                             62103                       
+Lovett                                              92343                       
+Martin                                              77324                       
+Massey                                              87911                       
+Mattson                                             95628                       
+McDonough                                           90866                       
+Milakofsky                                          98421                       
+Miranda                                             88883                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Mu??oz                                              92270                       
+Muntz                                               68337                       
+Odio                                                62293                       
+Thomas                                              71140                       
+Zichal                                              64670                       
+Portilla                                            81499                       
+Posey                                               80056                       
+Richardson                                          68759                       
+Rittner                                             72337                       
+Roach                                               93654                       
+Ruemmler                                            63328                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Samuels                                             70258                       
+Schmuck                                             69743                       
+Simas                                               94962                       
+Skoczek                                             54258                       
+Spencer                                             53275                       
+Ayling                                              57183                       
+Becnel                                              55031                       
+Binns                                               61372                       
+Birdsall                                            90735                       
+Bond                                                56166                       
+Branch                                              91155                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Brewer                                              92735                       
+Brown                                               60998                       
+Campos                                              93264                       
+Carter                                              75683                       
+Claude                                              97206                       
+Cohen                                               88594                       
+Davis                                               94808                       
+Dunn                                                69991                       
+Edwards                                             73852                       
+Emanuel                                             94915                       
+Faulman                                             76795                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Greene                                              72921                       
+Hegde                                               82368                       
+Hernandez                                           51271                       
+Hiatt                                               70193                       
+Hogan                                               85556                       
+Kochman                                             82046                       
+Koo                                                 53545                       
+Krass                                               59889                       
+Lartey                                              73361                       
+Leitner-Laserna                                     75184                       
+Lelyveld                                            59235                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Lezotte                                             73080                       
+Liegel                                              61477                       
+Lillie                                              96510                       
+Lu                                                  69286                       
+Naidoff                                             97374                       
+Narechania                                          88696                       
+Oxtoby                                              78646                       
+Pipkins                                             51794                       
+Trainor                                             82021                       
+Tranchin                                            91155                       
+Turk                                                99881                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Valencia                                            85534                       
+Vogel                                               94020                       
+Wade                                                59499                       
+Pulliam                                             59734                       
+Samuels, Jr.                                        59478                       
+Schuker                                             51490                       
+Smoot                                               53907                       
+Stickel                                             63675                       
+Stoev                                               99132                       
+Summers                                             66575                       
+Sweeney                                             95696                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Teehee                                              71528                       
+Albino                                              89935                       
+Aldy, Jr.                                           80518                       
+Anderson                                            86304                       
+Baldassaro                                          56820                       
+Beinart                                             67072                       
+Blake                                               78392                       
+Chambers                                            86557                       
+Coven                                               99971                       
+Cuba                                                79246                       
+Cunningham                                          52632                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+DeGuzman                                            89244                       
+DeRosa                                              80284                       
+Fenn                                                90638                       
+Finlen                                              64379                       
+Fiscus                                              75852                       
+Fitts                                               90387                       
+Ford                                                76829                       
+Gage                                                61146                       
+Gray                                                73733                       
+Hanson                                              80449                       
+Harris                                              70815                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Hash                                                82420                       
+Jabbour                                             92102                       
+Jackson                                             60749                       
+Jarrett                                             71682                       
+Jarvis-Shean                                        89463                       
+Jean-Pierre                                         95721                       
+Kalbaugh                                            52678                       
+Kale                                                76464                       
+Kelly                                               69057                       
+Levine                                              96713                       
+Love                                                99170                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Maska                                               53598                       
+McGrath                                             97781                       
+Metcalf                                             53330                       
+Mrazek                                              86357                       
+Neralla                                             75766                       
+Paige                                               75253                       
+Papa                                                78617                       
+Pfeiffer                                            81040                       
+Phadke                                              84653                       
+Tennison                                            80400                       
+Terrell                                             80165                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Tucker                                              76172                       
+Watkins                                             58399                       
+Webster                                             85351                       
+Young                                               50121                       
+Zelman                                              86307                       
+Pourmorad                                           62636                       
+Rivadeneira                                         77640                       
+Robertson                                           94124                       
+Rosalsky                                            69947                       
+Sabochik                                            98996                       
+Sanders                                             87798                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Schiliro                                            82277                       
+Shah                                                61617                       
+Sheehy                                              69981                       
+Strautmanis                                         82025                       
+Swire                                               59498                       
+Bassin                                              93536                       
+Bressler                                            97449                       
+Burman                                              83270                       
+Carden                                              99141                       
+De Sio, Jr.                                         82844                       
+Douglas                                             50414                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+DuBois                                              92574                       
+Dyer                                                66641                       
+Earnest                                             66404                       
+Firestone                                           89633                       
+Garcia                                              54469                       
+Gavin, Jr.                                          71427                       
+Hennigan                                            61483                       
+Hornsby                                             91546                       
+Hurley                                              53898                       
+Jamison                                             56622                       
+Kim                                                 79214                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+King                                                67772                       
+Kramer                                              92223                       
+Lee                                                 97056                       
+Leger                                               84318                       
+Lepow                                               67103                       
+Lorjuste                                            89845                       
+Markovitz                                           72625                       
+McBride                                             75460                       
+McNeal                                              56855                       
+Monteiro                                            78990                       
+Nathan                                              60788                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Neiman                                              73579                       
+Ocampo                                              79806                       
+Offerman                                            62828                       
+Olmos                                               79893                       
+Olson                                               73214                       
+Ortiz                                               58523                       
+Pate                                                77758                       
+Thorbjornsen                                        63884                       
+Tubman                                              85067                       
+Tucci                                               72974                       
+Vietor                                              96806                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Wang-Levine                                         92576                       
+Witt                                                98032                       
+Rathod                                              89821                       
+Reeves                                              71548                       
+Santucci                                            97790                       
+Saunders                                            54182                       
+Schaub                                              81537                       
+Sinha                                               50746                       
+Tate-Gilmore                                        99162                       
+Abrams                                              66767                       
+Attili                                              80020                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Axelrod                                             79333                       
+Bernard                                             95935                       
+Beverly                                             87084                       
+Burton                                              71870                       
+Campoverdi                                          82123                       
+Camu??ez                                            68996                       
+Castillo                                            54303                       
+Chhabra                                             62259                       
+Conrad                                              59929                       
+Cusack                                              56423                       
+DeGuzman, Jr.                                       80220                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+DeParle                                             55402                       
+Donovan                                             96534                       
+Droege                                              89619                       
+Fernkas                                             98156                       
+Flatgard                                            82227                       
+Freeman                                             85311                       
+Godfrey                                             96550                       
+Goodman                                             64521                       
+Greenawalt                                          50704                       
+Jarvis                                              99198                       
+Jones                                               77246                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Jung                                                57592                       
+Kocher                                              63771                       
+Kumar                                               94846                       
+Lechtenberg                                         88501                       
+Ledbetter                                           98640                       
+Lesser                                              90591                       
+Lipton                                              71786                       
+McCathran                                           92227                       
+Mehrbani                                            86875                       
+Millison                                            58323                       
+Moilanen                                            56723                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Nabors                                              60663                       
+Nelson                                              51677                       
+Northern                                            94950                       
+Thomas, III                                         98889                       
+Verrilli                                            77518                       
+Walsh                                               70782                       
+Whichard, IV                                        87686                       
+Winter                                              70307                       
+Roberts                                             65287                       
+Roddick                                             78377                       
+Rundlet                                             93341                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Setser                                              82195                       
+Smith                                               96188                       
+Sobel                                               72048                       
+Stoneman                                            56859                       
+Stracko                                             94340                       
+Taggart, Jr.                                        68703                       
+Amorsingh                                           82241                       
+Andrias                                             99944                       
+Baggetto                                            76408                       
+Baskerville, Jr.                                    74360                       
+Bisi                                                93791                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Block                                               74179                       
+Blount                                              84436                       
+Bookey-Baker                                        85724                       
+Brooke                                              62461                       
+Burnough                                            53909                       
+Campbell                                            61223                       
+Canery                                              91179                       
+Cushman                                             70582                       
+Dale                                                66652                       
+Fergenson                                           67087                       
+Finkenbinder                                        81897                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Furman                                              50353                       
+Gibbs                                               95423                       
+Gottlieb                                            67137                       
+Hable                                               68938                       
+Higginbottom                                        69914                       
+Hitchcock                                           55618                       
+Johnston                                            61837                       
+Kang                                                92897                       
+Keenan                                              94044                       
+Kiley                                               81393                       
+Kohnke                                              73434                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Lehrich                                             79640                       
+Lipsky                                              70629                       
+Luck                                                89186                       
+Mack                                                57204                       
+Mastromonaco                                        80882                       
+Mayekar                                             90534                       
+McLaughlin                                          98194                       
+Millett                                             66587                       
+Nguyen                                              80666                       
+Odintz                                              82502                       
+Tseggai                                             96388                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Vale                                                98860                       
+Weiser                                              68697                       
+Williams                                            54338                       
+Wong                                                97183                       
+
+433 rows selected.
+
+SQL> host pwd
+
+SQL> @ q7_query.sql
+ 19  ;
+ 20  
+SQL> start q7_query.sql;
+ 19  
+SQL> start ./q7_query.sql;
+ 19  
+SQL> start ./q7_query.sql;
+
+Warning: Procedure created with compilation errors.
+
+Errors for PROCEDURE SETEMPSALARY:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+3/8      PLS-00341: declaration of cursor 'EMP_CUR' is incomplete or            
+         malformed                                                              
+                                                                                
+4/9      PL/SQL: SQL Statement ignored                                          
+4/47     PL/SQL: ORA-00904: "P"."NAME": invalid identifier                      
+4/47     PLS-00225: subprogram or cursor 'P' reference is out of scope          
+6/18     PL/SQL: Item ignored                                                   
+12/17    PL/SQL: SQL Statement ignored                                          
+14/30    PL/SQL: ORA-00904: "L_EMPREC"."NAME": invalid identifier               
+14/30    PLS-00364: loop index variable 'L_EMPREC' use is invalid               
+SQL> start ./q7_query.sql;
+
+Procedure created.
+
+No errors.
+SQL> Select * from AlphaCoEmp;
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Perez                                               91159                       
+Utech                                               64137                       
+Vega                                                60112                       
+Whitty                                              91365                       
+Wilson                                              87394                       
+Psaki                                               85217                       
+Reinstein                                           67373                       
+Roche                                               81291                       
+Rouse                                               79413                       
+Sathe                                               98136                       
+Schulman                                            88779                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Seymour                                             95628                       
+Shapiro                                             60797                       
+Shaw                                                68742                       
+Sher                                                51441                       
+Showers                                             62806                       
+Siegel                                              99925                       
+Sirbu                                               98182                       
+Stephens                                            71689                       
+Sutton                                              86638                       
+Adams                                               79786                       
+Alley                                               95235                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Anello                                              61903                       
+Barnes                                              64326                       
+Bates                                               93301                       
+Bedingfield                                         91778                       
+Chaifetz                                            78757                       
+Clarke                                              97201                       
+Cobbina                                             57766                       
+Crutchfield                                         52062                       
+Dalheim                                             82734                       
+Ealons                                              73526                       
+Escobar                                             95984                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Farrell                                             77259                       
+Gaspard                                             80267                       
+Groth                                               62156                       
+Heimbach                                            91486                       
+Jawando                                             60307                       
+Kennedy                                             92356                       
+Konwinski                                           91932                       
+Lewis                                               57814                       
+Liddell-Westefeld                                   88885                       
+Limon                                               63486                       
+Loeb                                                56160                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+London                                              59607                       
+Maher                                               72451                       
+Messina                                             66430                       
+Monje, Jr.                                          63415                       
+Newell                                              60277                       
+Nicholson, Jr.                                      85703                       
+Noel                                                93870                       
+Oleske                                              78186                       
+Page                                                89244                       
+Terry                                               70588                       
+Vanderslice                                         62247                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Wear                                                87771                       
+White                                               92497                       
+Yeager Kaplan                                       80371                       
+Young, Jr.                                          52787                       
+Quinn                                               63717                       
+Raizk                                               87279                       
+Reed                                                50106                       
+Ryan                                                54817                       
+Sahgal                                              75398                       
+Sass                                                75395                       
+Schafer                                             69046                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Schwartz                                            57784                       
+Sibley                                              52284                       
+Singiser                                            79049                       
+Starkey                                             93798                       
+Swanson                                             54738                       
+Tamarin                                             57739                       
+Tchen                                               87067                       
+Agnew                                               85176                       
+Bauer                                               92799                       
+Beliveau                                            89393                       
+Bhowmik                                             67686                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Brennan                                             78333                       
+Buffett                                             77741                       
+Carrier                                             53577                       
+Cherlin                                             77481                       
+Cizner                                              72627                       
+Cokley                                              75387                       
+Colvin                                              97011                       
+Cuellar                                             72650                       
+Cutter                                              94981                       
+Deese                                               61297                       
+Dillon                                              88481                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Donilon                                             57631                       
+Dorsett                                             83054                       
+Fernandez                                           75873                       
+Frank                                               78765                       
+Frankel                                             60413                       
+Frye                                                97173                       
+Gonzalez                                            67329                       
+Graham                                              83209                       
+Hoang                                               57932                       
+Hopkins                                             71270                       
+Inouye                                              58444                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Johnson                                             88656                       
+Kelleher, Jr.                                       66249                       
+Larus                                               71168                       
+Lynn                                                71154                       
+Mackey                                              97344                       
+McCarthy                                            70878                       
+McGinnis                                            86668                       
+McGuire                                             67579                       
+Mosteller                                           56931                       
+Mueller                                             98920                       
+Murtha                                              89988                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Onek                                                91349                       
+Papas                                               69978                       
+Parker                                              52998                       
+Paulsen                                             78174                       
+Phillips, III                                       60728                       
+Turton                                              59929                       
+Voorman                                             95087                       
+Watson                                              66114                       
+Wright                                              63879                       
+Pojman                                              83026                       
+Pope                                                52100                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Rodriguez                                           83657                       
+Sutphen                                             81049                       
+Asen                                                89462                       
+Belive                                              90971                       
+Browner                                             72067                       
+Brundage                                            90948                       
+Brush                                               94999                       
+Cardwell                                            56446                       
+Chen                                                51243                       
+Chiodo                                              78048                       
+Corrigan                                            83935                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Crowley                                             99500                       
+Davies                                              98895                       
+Devine                                              50921                       
+Edgerton                                            98359                       
+Edmonds                                             59295                       
+Eisen                                               92966                       
+Espinel                                             53942                       
+Favreau                                             71570                       
+Gardaphe                                            84969                       
+Gillette                                            52645                       
+Gomez                                               58459                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Gottry                                              60628                       
+Grant                                               61228                       
+Green                                               86601                       
+Harper                                              88694                       
+Hughes                                              55500                       
+Hurwitz                                             63287                       
+Juska                                               81208                       
+Kammerer                                            66235                       
+Kimball                                             60032                       
+Kommareddi                                          54927                       
+Kravis                                              89493                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+LaBolt                                              78118                       
+Lerner                                              57220                       
+Lewin                                               93235                       
+Lippert                                             62103                       
+Lovett                                              92343                       
+Martin                                              77324                       
+Massey                                              87911                       
+Mattson                                             95628                       
+McDonough                                           90866                       
+Milakofsky                                          98421                       
+Miranda                                             88883                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Mu??oz                                              92270                       
+Muntz                                               68337                       
+Odio                                                62293                       
+Thomas                                              71140                       
+Zichal                                              64670                       
+Portilla                                            81499                       
+Posey                                               80056                       
+Richardson                                          68759                       
+Rittner                                             72337                       
+Roach                                               93654                       
+Ruemmler                                            63328                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Samuels                                             70258                       
+Schmuck                                             69743                       
+Simas                                               94962                       
+Skoczek                                             54258                       
+Spencer                                             53275                       
+Ayling                                              57183                       
+Becnel                                              55031                       
+Binns                                               61372                       
+Birdsall                                            90735                       
+Bond                                                56166                       
+Branch                                              91155                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Brewer                                              92735                       
+Brown                                               60998                       
+Campos                                              93264                       
+Carter                                              75683                       
+Claude                                              97206                       
+Cohen                                               88594                       
+Davis                                               94808                       
+Dunn                                                69991                       
+Edwards                                             73852                       
+Emanuel                                             94915                       
+Faulman                                             76795                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Greene                                              72921                       
+Hegde                                               82368                       
+Hernandez                                           51271                       
+Hiatt                                               70193                       
+Hogan                                               85556                       
+Kochman                                             82046                       
+Koo                                                 53545                       
+Krass                                               59889                       
+Lartey                                              73361                       
+Leitner-Laserna                                     75184                       
+Lelyveld                                            59235                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Lezotte                                             73080                       
+Liegel                                              61477                       
+Lillie                                              96510                       
+Lu                                                  69286                       
+Naidoff                                             97374                       
+Narechania                                          88696                       
+Oxtoby                                              78646                       
+Pipkins                                             51794                       
+Trainor                                             82021                       
+Tranchin                                            91155                       
+Turk                                                99881                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Valencia                                            85534                       
+Vogel                                               94020                       
+Wade                                                59499                       
+Pulliam                                             59734                       
+Samuels, Jr.                                        59478                       
+Schuker                                             51490                       
+Smoot                                               53907                       
+Stickel                                             63675                       
+Stoev                                               99132                       
+Summers                                             66575                       
+Sweeney                                             95696                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Teehee                                              71528                       
+Albino                                              89935                       
+Aldy, Jr.                                           80518                       
+Anderson                                            86304                       
+Baldassaro                                          56820                       
+Beinart                                             67072                       
+Blake                                               78392                       
+Chambers                                            86557                       
+Coven                                               99971                       
+Cuba                                                79246                       
+Cunningham                                          52632                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+DeGuzman                                            89244                       
+DeRosa                                              80284                       
+Fenn                                                90638                       
+Finlen                                              64379                       
+Fiscus                                              75852                       
+Fitts                                               90387                       
+Ford                                                76829                       
+Gage                                                61146                       
+Gray                                                73733                       
+Hanson                                              80449                       
+Harris                                              70815                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Hash                                                82420                       
+Jabbour                                             92102                       
+Jackson                                             60749                       
+Jarrett                                             71682                       
+Jarvis-Shean                                        89463                       
+Jean-Pierre                                         95721                       
+Kalbaugh                                            52678                       
+Kale                                                76464                       
+Kelly                                               69057                       
+Levine                                              96713                       
+Love                                                99170                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Maska                                               53598                       
+McGrath                                             97781                       
+Metcalf                                             53330                       
+Mrazek                                              86357                       
+Neralla                                             75766                       
+Paige                                               75253                       
+Papa                                                78617                       
+Pfeiffer                                            81040                       
+Phadke                                              84653                       
+Tennison                                            80400                       
+Terrell                                             80165                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Tucker                                              76172                       
+Watkins                                             58399                       
+Webster                                             85351                       
+Young                                               50121                       
+Zelman                                              86307                       
+Pourmorad                                           62636                       
+Rivadeneira                                         77640                       
+Robertson                                           94124                       
+Rosalsky                                            69947                       
+Sabochik                                            98996                       
+Sanders                                             87798                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Schiliro                                            82277                       
+Shah                                                61617                       
+Sheehy                                              69981                       
+Strautmanis                                         82025                       
+Swire                                               59498                       
+Bassin                                              93536                       
+Bressler                                            97449                       
+Burman                                              83270                       
+Carden                                              99141                       
+De Sio, Jr.                                         82844                       
+Douglas                                             50414                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+DuBois                                              92574                       
+Dyer                                                66641                       
+Earnest                                             66404                       
+Firestone                                           89633                       
+Garcia                                              54469                       
+Gavin, Jr.                                          71427                       
+Hennigan                                            61483                       
+Hornsby                                             91546                       
+Hurley                                              53898                       
+Jamison                                             56622                       
+Kim                                                 79214                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+King                                                67772                       
+Kramer                                              92223                       
+Lee                                                 97056                       
+Leger                                               84318                       
+Lepow                                               67103                       
+Lorjuste                                            89845                       
+Markovitz                                           72625                       
+McBride                                             75460                       
+McNeal                                              56855                       
+Monteiro                                            78990                       
+Nathan                                              60788                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Neiman                                              73579                       
+Ocampo                                              79806                       
+Offerman                                            62828                       
+Olmos                                               79893                       
+Olson                                               73214                       
+Ortiz                                               58523                       
+Pate                                                77758                       
+Thorbjornsen                                        63884                       
+Tubman                                              85067                       
+Tucci                                               72974                       
+Vietor                                              96806                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Wang-Levine                                         92576                       
+Witt                                                98032                       
+Rathod                                              89821                       
+Reeves                                              71548                       
+Santucci                                            97790                       
+Saunders                                            54182                       
+Schaub                                              81537                       
+Sinha                                               50746                       
+Tate-Gilmore                                        99162                       
+Abrams                                              66767                       
+Attili                                              80020                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Axelrod                                             79333                       
+Bernard                                             95935                       
+Beverly                                             87084                       
+Burton                                              71870                       
+Campoverdi                                          82123                       
+Camu??ez                                            68996                       
+Castillo                                            54303                       
+Chhabra                                             62259                       
+Conrad                                              59929                       
+Cusack                                              56423                       
+DeGuzman, Jr.                                       80220                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+DeParle                                             55402                       
+Donovan                                             96534                       
+Droege                                              89619                       
+Fernkas                                             98156                       
+Flatgard                                            82227                       
+Freeman                                             85311                       
+Godfrey                                             96550                       
+Goodman                                             64521                       
+Greenawalt                                          50704                       
+Jarvis                                              99198                       
+Jones                                               77246                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Jung                                                57592                       
+Kocher                                              63771                       
+Kumar                                               94846                       
+Lechtenberg                                         88501                       
+Ledbetter                                           98640                       
+Lesser                                              90591                       
+Lipton                                              71786                       
+McCathran                                           92227                       
+Mehrbani                                            86875                       
+Millison                                            58323                       
+Moilanen                                            56723                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Nabors                                              60663                       
+Nelson                                              51677                       
+Northern                                            94950                       
+Thomas, III                                         98889                       
+Verrilli                                            77518                       
+Walsh                                               70782                       
+Whichard, IV                                        87686                       
+Winter                                              70307                       
+Roberts                                             65287                       
+Roddick                                             78377                       
+Rundlet                                             93341                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Setser                                              82195                       
+Smith                                               96188                       
+Sobel                                               72048                       
+Stoneman                                            56859                       
+Stracko                                             94340                       
+Taggart, Jr.                                        68703                       
+Amorsingh                                           82241                       
+Andrias                                             99944                       
+Baggetto                                            76408                       
+Baskerville, Jr.                                    74360                       
+Bisi                                                93791                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Block                                               74179                       
+Blount                                              84436                       
+Bookey-Baker                                        85724                       
+Brooke                                              62461                       
+Burnough                                            53909                       
+Campbell                                            61223                       
+Canery                                              91179                       
+Cushman                                             70582                       
+Dale                                                66652                       
+Fergenson                                           67087                       
+Finkenbinder                                        81897                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Furman                                              50353                       
+Gibbs                                               95423                       
+Gottlieb                                            67137                       
+Hable                                               68938                       
+Higginbottom                                        69914                       
+Hitchcock                                           55618                       
+Johnston                                            61837                       
+Kang                                                92897                       
+Keenan                                              94044                       
+Kiley                                               81393                       
+Kohnke                                              73434                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Lehrich                                             79640                       
+Lipsky                                              70629                       
+Luck                                                89186                       
+Mack                                                57204                       
+Mastromonaco                                        80882                       
+Mayekar                                             90534                       
+McLaughlin                                          98194                       
+Millett                                             66587                       
+Nguyen                                              80666                       
+Odintz                                              82502                       
+Tseggai                                             96388                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Vale                                                98860                       
+Weiser                                              68697                       
+Williams                                            54338                       
+Wong                                                97183                       
+
+433 rows selected.
+
+SQL> exec setEmpSalary('Vale', 10000, 20000)
+
+PL/SQL procedure successfully completed.
+
+SQL> select * from AlphaCoEmp where name = 'Vale';
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Vale                                                12723                       
+
+SQL> start ./q8_query.sql;
+
+Warning: Function created with compilation errors.
+
+Errors for FUNCTION GETEMPSALARY:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+5/2      PLS-00103: Encountered the symbol "SELECT" when expecting one of       
+         the following:                                                         
+         begin function pragma procedure subtype type <an identifier>           
+         <a double-quoted delimited-identifier> current cursor delete           
+         exists prior external language                                         
+                                                                                
+SQL> Create or Replace FUNCTION getEmpSalary(p_name in VARCHAR)
+  2  Return NUMBER IS
+  3          l_salary AlphaCoEmp.salary%type;
+  4  BEGIN
+  5          Select salary as l_salary from AlphaCoEmp where name = p_name;
+  6          return l_salary;
+  7  END;
+  8  /
+
+Warning: Function created with compilation errors.
+
+SQL> show errors;Create or Replace FUNCTION getEmpSalary(p_name in VARCHAR)
+Usage: SHOW ERRORS [{ FUNCTION | PROCEDURE | PACKAGE |
+   PACKAGE BODY | TRIGGER | VIEW 
+   | TYPE | TYPE BODY | DIMENSION 
+   | JAVA SOURCE | JAVA CLASS } [schema.]name]
+SQL> Return NUMBER IS
+SP2-0734: unknown command beginning "Return NUM..." - rest of line ignored.
+SQL>         l_salary AlphaCoEmp.salary%type;
+SP2-0224: invalid starting line number
+SQL> BEGIN
+  2          Select salary into l_salary from AlphaCoEmp where name = p_name;
+  3          return l_salary;
+  4  END;
+  5  /
+        Select salary into l_salary from AlphaCoEmp where name = p_name;
+                                                                 *
+ERROR at line 2:
+ORA-06550: line 2, column 66: 
+PL/SQL: ORA-00904: "P_NAME": invalid identifier 
+ORA-06550: line 2, column 9: 
+PL/SQL: SQL Statement ignored 
+ORA-06550: line 3, column 9: 
+PLS-00372: In a procedure, RETURN statement cannot contain an expression 
+ORA-06550: line 3, column 9: 
+PL/SQL: Statement ignored 
+
+
+SQL> show errors;
+Errors for FUNCTION GETEMPSALARY:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+5/9      PLS-00428: an INTO clause is expected in this SELECT statement         
+SQL> start ./q8_query.sql;
+
+Function created.
+
+No errors.
+SQL> Select getEmpSalary('Vale')From Dual;
+
+GETEMPSALARY('VALE')                                                            
+--------------------                                                            
+               12723                                                            
+
+SQL> spool off

@@ -1,0 +1,33 @@
+SQL> define_editor = "vim"
+SQL> edit data.sql
+
+SQL> edit data.sql
+
+SQL> host ls
+
+SQL> start/home/fkuan/Documents/COEN178/labs/lab1/data.sql
+SP2-0310: unable to open file "/home/fkuan/Documents/COEN178/labs/lab1/data.sql"
+SQL> @/home/fkuan/data.sql
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+SQL> select * from test;
+
+      TNUM STR                                                                  
+---------- ----------                                                           
+        11 eleven                                                               
+         1 A test                                                               
+        10 ten                                                                  
+        16 sixteen                                                              
+
+SQL> host ls
+
+SQL> host pwd
+
+SQL> spool off;

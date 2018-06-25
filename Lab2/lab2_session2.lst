@@ -1,0 +1,149 @@
+SQL> drop table EMP;
+drop table EMP
+           *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+SQL> drop table L_EMP;
+
+Table dropped.
+
+SQL> drop table L_DEPT;
+
+Table dropped.
+
+SQL> Create table L_DEPT (deptId CHAR(5) Primary Key, deptname CHAR(10));
+
+Table created.
+
+SQL> Create table L_EMP (empNo Integer Primary Key, empname CHAR(10),deptId CHAR(5), Foreign Key (deptID) references L_DEPT(deptId));
+
+Table created.
+
+SQL> insert into L_DEPT values('d1','Research');
+
+1 row created.
+
+SQL> 
+SQL> insert into L_DEPT values('d2','Devt');
+
+1 row created.
+
+SQL> 
+SQL> insert into L_DEPT values('d3','Testing');
+
+1 row created.
+
+SQL> 
+SQL> insert into L_DEPT values('d4','Advert');;
+insert into L_DEPT values('d4','Advert');
+                                        *
+ERROR at line 1:
+ORA-00911: invalid character 
+
+
+SQL> insert into L_DEPT values('d4','Advert');
+
+1 row created.
+
+SQL> insert into L_EMP values(1,'smith','d1');
+
+1 row created.
+
+SQL> 
+SQL> insert into L_EMP values(2,'jones','d2');
+
+1 row created.
+
+SQL> 
+SQL> insert into L_EMP values(3,'wayne','d1');
+
+1 row created.
+
+SQL> 
+SQL> insert into L_EMP values(4,'moor','d3');
+
+1 row created.
+
+SQL> 
+SQL> insert into L_EMP values(5,'king','d1');
+
+1 row created.
+
+SQL> 
+SQL> insert into L_EMP values(6,'chen','d1');
+
+1 row created.
+
+SQL> 
+SQL> insert into L_EMP values(7,'winger','d3');
+
+1 row created.
+
+SQL> Select empname from L_EMP, L_DEPT where L_EMP.deptId = L_Dept.deptId AND deptname = 'testing';
+
+no rows selected
+
+SQL> Select empname from L_EMP, L_DEPT where L_EMP.deptId = L_Dept.deptId AND lower(deptname) = 'testing';
+
+EMPNAME                                                                         
+----------                                                                      
+moor                                                                            
+winger                                                                          
+
+SQL> Select empname from L_EMP where L_EMP.deptId in (Select deptId from L_DEPT where lower(deptname) ='testing');
+
+EMPNAME                                                                         
+----------                                                                      
+moor                                                                            
+winger                                                                          
+
+SQL> Select deptname from L_DEPT LEFT JOIN L_EMP ON L_DEPT.deptId = L_EMP.deptID where empname is NULL;
+
+DEPTNAME                                                                        
+----------                                                                      
+Advert                                                                          
+
+SQL> Select deptname from L_DEPT where L_EMP.deptID not in L_DEPT.deptID;
+Select deptname from L_DEPT where L_EMP.deptID not in L_DEPT.deptID
+                                  *
+ERROR at line 1:
+ORA-00904: "L_EMP"."DEPTID": invalid identifier 
+
+
+SQL> Select deptname from L_DEPT where L_EMP.deptId not in L_DEPT.deptId;
+Select deptname from L_DEPT where L_EMP.deptId not in L_DEPT.deptId
+                                  *
+ERROR at line 1:
+ORA-00904: "L_EMP"."DEPTID": invalid identifier 
+
+
+SQL> Select deptname from L_DEPT where L_EMP.deptId not in L_DEPT.deptId;
+Select deptname from L_DEPT where L_EMP.deptId not in L_DEPT.deptId
+                                  *
+ERROR at line 1:
+ORA-00904: "L_EMP"."DEPTID": invalid identifier 
+
+
+SQL> Select deptname from L_DEPT where L_EMP.deptId not in (Select L_DEPT.deptId where L_DEPT.deptId = L_EMP.deptId);
+Select deptname from L_DEPT where L_EMP.deptId not in (Select L_DEPT.deptId where L_DEPT.deptId = L_EMP.deptId)
+                                                                            *
+ERROR at line 1:
+ORA-00923: FROM keyword not found where expected 
+
+
+SQL> Select deptname from L_DEPT where L_EMP.deptId not in (Select L_DEPT.deptId from L_DEPT where L_DEPT.deptId = L_EMP.deptId);
+Select deptname from L_DEPT where L_EMP.deptId not in (Select L_DEPT.deptId from L_DEPT where L_DEPT.deptId = L_EMP.deptId)
+                                  *
+ERROR at line 1:
+ORA-00904: "L_EMP"."DEPTID": invalid identifier 
+
+
+SQL> Select deptname from L_DEPT where L_DEPT.deptId not in (Select L_EMP.deptId from L_EMP);
+
+DEPTNAME                                                                        
+----------                                                                      
+Advert                                                                          
+
+SQL> spool off;

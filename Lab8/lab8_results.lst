@@ -1,0 +1,489 @@
+SQL> Create table ItemOrder (orderNo VARCHAR(5) Primary key, qty Integer);
+
+Table created.
+
+SQL> CREATE OR REPLACE TRIGGER ItemOrder_after_insert_trig
+  2  AFTER INSERT
+  3  	ON ItemOrder
+  4  	FOR EACH ROW
+  5  DECLARE
+  6      v_quantity Integer;
+  7  BEGIN
+  8  	SELECT qty
+  9  	INTO v_quantity
+ 10      FROM ItemOrder
+ 11      WHERE orderNo = 'o1';
+ 12  END;
+ 13  /
+
+Trigger created.
+
+SQL> Show Errors;Insert into ItemOrder values ('o1',100);
+Usage: SHOW ERRORS [{ FUNCTION | PROCEDURE | PACKAGE |
+   PACKAGE BODY | TRIGGER | VIEW 
+   | TYPE | TYPE BODY | DIMENSION 
+   | JAVA SOURCE | JAVA CLASS } [schema.]name]
+SQL> 
+SQL> Select * from ItemOrder;
+
+no rows selected
+
+SQL> 
+SQL> CREATE TABLE Course(
+  2      courseNo   INTEGER PRIMARY KEY,
+  3      courseName VARCHAR(20)
+  4  );
+
+Table created.
+
+SQL> CREATE TABLE Course_Prereq(
+  2      courseNo   INTEGER ,
+  3      prereqNo Integer,
+  4  	Foreign Key(prereqNo) references Course (courseNo)
+  5  );
+
+Table created.
+
+SQL> 
+SQL> insert into Course values (10,'C++');
+
+1 row created.
+
+SQL> insert into Course values (11,'Java');
+
+1 row created.
+
+SQL> insert into Course values (12,'Python');
+
+1 row created.
+
+SQL> insert into Course values (121,'Web');
+
+1 row created.
+
+SQL> insert into Course values (133,'Software Eng');
+
+1 row created.
+
+SQL> 
+SQL> CREATE OR REPLACE TRIGGER LimitTest
+  2      BEFORE INSERT OR UPDATE ON Course_Prereq
+  3      FOR EACH ROW  -- A row level trigger
+  4  DECLARE
+  5      v_MAX_PREREQS CONSTANT INTEGER := 2;
+  6  	v_CurNum INTEGER;
+  7  BEGIN
+  8  	BEGIN
+  9  		SELECT COUNT(*) INTO v_CurNum FROM Course_Prereq
+ 10  		WHERE courseNo = :new.CourseNo Group by courseNo;
+ 11  		EXCEPTION
+ 12  			-- Before you enter the first row, no data is found
+ 13  			WHEN no_data_found THEN
+ 14  			DBMS_OUTPUT.put_line('not found');
+ 15  				v_CurNum := 0;
+ 16  	END;
+ 17  	if v_curNum > 0 THEN
+ 18  		IF v_CurNum + 1 > v_MAX_PREREQS THEN
+ 19  		RAISE_APPLICATION_ERROR(-20000,'Only   2   prereqs   for course');
+ 20  		END IF;
+ 21  	END IF;
+ 22  END;
+ 23  /
+
+Trigger created.
+
+SQL> SHOW ERRORS;
+No errors.
+SQL> insert into Course_Prereq values (121,11);
+
+1 row created.
+
+SQL> insert into Course_Prereq values (121,10);
+
+1 row created.
+
+SQL> Select * from Course_PreReq;
+
+            E x p e n s e  R e p o r t            
+           ============================           
+                                                  
+  COURSENO   PREREQNO                             
+========== ==========                             
+       121         11                             
+       121         10                             
+
+SQL> insert into Course_Prereq values (121,12);
+insert into Course_Prereq values (121,12)
+            *
+ERROR at line 1:
+ORA-20000: Only   2   prereqs   for course 
+ORA-06512: at "FKUAN.LIMITTEST", line 16 
+ORA-04088: error during execution of trigger 
+'FKUAN.LIMITTEST' 
+
+
+SQL> Select * from Course_Prereq;
+
+            E x p e n s e  R e p o r t            
+           ============================           
+                                                  
+  COURSENO   PREREQNO                             
+========== ==========                             
+       121         11                             
+       121         10                             
+
+SQL> insert into Course_Prereq values (133,12);
+
+1 row created.
+
+SQL> 
+SQL>  Select * from Course_Prereq;
+
+            E x p e n s e  R e p o r t            
+           ============================           
+                                                  
+  COURSENO   PREREQNO                             
+========== ==========                             
+       121         11                             
+       121         10                             
+       133         12                             
+
+SQL> update COURSE_PREREQset courseno = 121 where courseno= 133;
+update COURSE_PREREQset courseno = 121 where courseno= 133
+                                 *
+ERROR at line 1:
+ORA-00971: missing SET keyword 
+
+
+SQL> update COURSE_PREREQ
+  2  set courseno = 121 where courseno= 133;
+update COURSE_PREREQ
+       *
+ERROR at line 1:
+ORA-04091: table FKUAN.COURSE_PREREQ is mutating, 
+trigger/function may not see it 
+ORA-06512: at "FKUAN.LIMITTEST", line 6 
+ORA-04088: error during execution of trigger 
+'FKUAN.LIMITTEST' 
+
+
+SQL> 
+SQL> Delete from Course_Prereq;
+
+3 rows deleted.
+
+SQL> CREATE OR REPLACE TRIGGER LimitTest
+  2  FOR INSERT
+  3  ON Course_Prereq
+  4  COMPOUND TRIGGER
+  5   /* Declaration Section*/
+  6   v_MAX_PREREQS CONSTANT INTEGER := 2;
+  7      v_CurNum INTEGER := 1;
+  8      v_cno INTEGER;
+  9   --ROW level
+ 10   BEFORE EACH ROW IS
+ 11   BEGIN
+ 12   	v_cno := :NEW.COURSENO;
+ 13   END BEFORE EACH ROW;
+ 14   --Statement level
+ 15   AFTER STATEMENT IS
+ 16   BEGIN
+ 17   SELECT COUNT(*) INTO v_CurNum FROM Course_Prereq
+ 18   	WHERE courseNo = v_cno Group by courseNo;
+ 19   	IF v_CurNum  > v_MAX_PREREQS THEN
+ 20   		RAISE_APPLICATION_ERROR(-20000,'Only 2 prereqs for
+ 21   		course');
+ 22   			END IF;
+ 23   END AFTER STATEMENT;
+ 24   END ;
+ 25   /
+
+Trigger created.
+
+SQL>  SHOW ERRORS;
+No errors.
+SQL> insert into Course_Prereq values (121,11);
+
+1 row created.
+
+SQL> insert into Course_Prereq values (121,10);
+
+1 row created.
+
+SQL> insert into Course_Prereq values (121,12);
+insert into Course_Prereq values (121,12)
+            *
+ERROR at line 1:
+ORA-20000: Only 2 prereqs for 
+course 
+ORA-06512: at "FKUAN.LIMITTEST", line 17 
+ORA-04088: error during execution of trigger 
+'FKUAN.LIMITTEST' 
+
+
+SQL> insert into Course_Prereq values (133,12);Select * from Course_Prereq;
+insert into Course_Prereq values (133,12);Select * from Course_Prereq
+                                         *
+ERROR at line 1:
+ORA-00911: invalid character 
+
+
+SQL> Select * from Course_Prereq;
+
+            E x p e n s e  R e p o r t            
+           ============================           
+                                                  
+  COURSENO   PREREQNO                             
+========== ==========                             
+       121         11                             
+       121         10                             
+
+SQL> update COURSE_PREREQ
+  2  set courseno = 121 where courseno= 133;
+
+0 rows updated.
+
+SQL> insert into Course_Prereq values (133,12);
+
+1 row created.
+
+SQL>  update COURSE_PREREQ
+  2  set courseno = 121 where courseno= 133;
+
+1 row updated.
+
+SQL> Select * from Course_Prereq;
+
+            E x p e n s e  R e p o r t            
+           ============================           
+                                                  
+  COURSENO   PREREQNO                             
+========== ==========                             
+       121         11                             
+       121         10                             
+       121         12                             
+
+SQL> SET PAGESIZE 100
+SQL> SET LINESIZE 79
+SQL> PROMPT ****************************************************************
+****************************************************************
+SQL> 
+SQL> PROMPT Generating the Report
+Generating the Report
+SQL> 
+SQL> SET TERMOUT OFF
+SQL> 
+SQL> COLUMN curdate NEW_VALUE report_date
+SQL> SELECT TO_CHAR(SYSDATE,'dd-Mon-yyyy') curdate
+  2   FROM DUAL;
+
+                           E x p e n s e  R e p o r t                          
+                          ============================                         
+                                                                               
+CURDATE                                                                        
+===========                                                                    
+04-Jun-2018                                                                    
+
+SQL> SET TERMOUT ON
+SQL> 
+SQL> PROMPT &report_date
+04-Jun-2018
+SQL> 
+SQL> TTITLE skip 2 CENTER '' skip 2
+SQL> 
+SQL> 
+SQL> COLUMN ITEM HEADING 'item name' FORMAT A18
+SQL> 
+SQL> COLUMN LOCATION HEADING 'city' FORMAT A10
+SQL> 
+SQL> select ITEM, LOCATION  from DeliveryService where location = 'SJ';
+
+no rows selected
+
+SQL> CREATE TABLE Expenses(expenseDate date PRIMARY KEY,
+  2  	groceries Number(10,2), entertainment Number(10,2),
+  3  	rent Number(10,2));
+CREATE TABLE Expenses(expenseDate date PRIMARY KEY,
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+SQL> INSERT INTO EXPENSES VALUES('12-Mar-2015',15.25,10.50,500.00);
+INSERT INTO EXPENSES VALUES('12-Mar-2015',15.25,10.50,500.00)
+*
+ERROR at line 1:
+ORA-00001: unique constraint (FKUAN.SYS_C00644902) violated 
+
+
+SQL> INSERT INTO EXPENSES VALUES('15-Jul-2014',25.75,5.00,700.00);
+INSERT INTO EXPENSES VALUES('15-Jul-2014',25.75,5.00,700.00)
+*
+ERROR at line 1:
+ORA-00001: unique constraint (FKUAN.SYS_C00644902) violated 
+
+
+SQL> INSERT INTO EXPENSES VALUES('27-Jan-2014',10.00,12.00,400.00);
+INSERT INTO EXPENSES VALUES('27-Jan-2014',10.00,12.00,400.00)
+*
+ERROR at line 1:
+ORA-00001: unique constraint (FKUAN.SYS_C00644902) violated 
+
+
+SQL> INSERT INTO EXPENSES VALUES('20-Feb-2015',12.00,15.00,800.00);
+INSERT INTO EXPENSES VALUES('20-Feb-2015',12.00,15.00,800.00)
+*
+ERROR at line 1:
+ORA-00001: unique constraint (FKUAN.SYS_C00644902) violated 
+
+
+SQL> INSERT INTO EXPENSES VALUES('30-Oct-2014',5.00,2.00,100.00);
+INSERT INTO EXPENSES VALUES('30-Oct-2014',5.00,2.00,100.00)
+*
+ERROR at line 1:
+ORA-00001: unique constraint (FKUAN.SYS_C00644902) violated 
+
+
+SQL> 
+SQL> /*Changing headings for table */
+INSERT INTO EXPENSES VALUES('30-Oct-2014',5.00,2.00,100.00)
+*
+ERROR at line 1:
+ORA-00001: unique constraint (FKUAN.SYS_C00644902) violated 
+
+
+SQL> COLUMN expenseDate		HEADING 'Date'
+SQL> COLUMN groceries		HEADING 'Groceries'
+SQL> COLUMN entertainment	HEADING 'Entertainment'
+SQL> COLUMN rent				HEADING 'Rent'
+SQL> SELECT expenseDate, groceries, entertainment, rent
+  2  FROM EXPENSES;
+
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+Date       Groceries Entertainment     Rent                                    
+========= ========== ============= ========                                    
+12-MAR-15      15.25          10.5     $500                                    
+15-JUL-14      25.75             5     $700                                    
+27-JAN-14         10            12     $400                                    
+20-FEB-15         12            15     $800                                    
+30-OCT-14          5             2     $100                                    
+          ---------- ------------- --------                                    
+avg             13.6           8.9     $500                                    
+maximum        25.75            15     $800                                    
+sum               68          44.5   $2,500                                    
+
+SQL> 
+SQL> SET UNDERLINE =
+SQL> 
+SQL> /*Skip a line between rows*/
+
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+Date       Groceries Entertainment     Rent                                    
+========= ========== ============= ========                                    
+12-MAR-15      15.25          10.5     $500                                    
+15-JUL-14      25.75             5     $700                                    
+27-JAN-14         10            12     $400                                    
+20-FEB-15         12            15     $800                                    
+30-OCT-14          5             2     $100                                    
+          ---------- ------------- --------                                    
+avg             13.6           8.9     $500                                    
+maximum        25.75            15     $800                                    
+sum               68          44.5   $2,500                                    
+
+SQL> BREAK ON expenseDate SKIP 1
+SQL> 
+SQL> /*Display rent with dollar sign */
+
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+Date       Groceries Entertainment     Rent                                    
+========= ========== ============= ========                                    
+12-MAR-15      15.25          10.5     $500                                    
+                                                                               
+15-JUL-14      25.75             5     $700                                    
+                                                                               
+27-JAN-14         10            12     $400                                    
+                                                                               
+20-FEB-15         12            15     $800                                    
+                                                                               
+30-OCT-14          5             2     $100                                    
+                                                                               
+
+SQL> COLUMN rent FORMAT $99,990
+SQL> /*Titling*/
+
+                                                                               
+                                                                               
+                                                                               
+                                                                               
+Date       Groceries Entertainment     Rent                                    
+========= ========== ============= ========                                    
+12-MAR-15      15.25          10.5     $500                                    
+                                                                               
+15-JUL-14      25.75             5     $700                                    
+                                                                               
+27-JAN-14         10            12     $400                                    
+                                                                               
+20-FEB-15         12            15     $800                                    
+                                                                               
+30-OCT-14          5             2     $100                                    
+                                                                               
+
+SQL> TTITLE CENTER 'E x p e n s e  R e p o r t' SKIP 1 -
+> CENTER '============================' SKIP 2
+SQL> SET LINESIZE 50
+SQL> 
+SQL> /*Computing Multiple summary lines*/
+
+            E x p e n s e  R e p o r t            
+           ============================           
+                                                  
+Date       Groceries Entertainment     Rent       
+========= ========== ============= ========       
+12-MAR-15      15.25          10.5     $500       
+                                                  
+15-JUL-14      25.75             5     $700       
+                                                  
+27-JAN-14         10            12     $400       
+                                                  
+20-FEB-15         12            15     $800       
+                                                  
+30-OCT-14          5             2     $100       
+                                                  
+
+SQL> BREAK ON REPORT
+SQL> COMPUTE AVG SUM MAX OF groceries entertainment rent ON REPORT
+SQL> 
+SQL> APPEND entertainment;
+  2* FROM EXPENSESentertainment
+SQL> APPEND rent;
+  2* FROM EXPENSESentertainmentrent
+SQL> SELECT expenseDate, groceries, entertainment, rent
+  2  FROM EXPENSES;
+
+            E x p e n s e  R e p o r t            
+           ============================           
+                                                  
+Date       Groceries Entertainment     Rent       
+========= ========== ============= ========       
+12-MAR-15      15.25          10.5     $500       
+15-JUL-14      25.75             5     $700       
+27-JAN-14         10            12     $400       
+20-FEB-15         12            15     $800       
+30-OCT-14          5             2     $100       
+          ---------- ------------- --------       
+avg             13.6           8.9     $500       
+maximum        25.75            15     $800       
+sum               68          44.5   $2,500       
+
+SQL> /spool off;
+SP2-0042: unknown command "/spool off" - rest of line ignored.
+SQL> spool off

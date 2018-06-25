@@ -1,0 +1,571 @@
+SQL> Create table BANKCUST_6(custno VARCHAR(5) Primary Key,custname
+  2  VARCHAR(20), street VARCHAR(30), city VARCHAR(20));
+
+Table created.
+
+SQL> 
+SQL> Create table ACCOUNTS_6 (AccountNo VARCHAR(5) Primary Key,
+  2  accountType VARCHAR(10), amount NUMBER(10,2), custno varchar(5),
+  3  CONSTRAINT accounts_fkey FOREIGN Key (custno)REFERENCES BANKCUST_6(custno));
+
+Table created.
+
+SQL> 
+SQL> Create table TOTALS_6 (custno VARCHAR(5), totalAmount Number(10,2),
+  2  CONSTRAINT totals_fkey FOREIGN Key (custno)REFERENCES BANKCUST_6(custno));
+
+Table created.
+
+SQL> set serveroutput on;
+SQL> CREATE or REPLACE TRIGGER display_customer_trig
+  2          AFTER  INSERT on BankCust_6
+  3          FOR EACH ROW
+  4  BEGIN
+  5          DBMS_OUTPUT.PUT_LINE('From Trigger '||'Customer NO:
+  6  '||:new.custno||' Customer Name: '||:new.custname' city: '||:new city);
+  7  END;
+  8  /
+
+Warning: Trigger created with compilation errors.
+
+SQL> show errors;
+Errors for TRIGGER DISPLAY_CUSTOMER_TRIG:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+3/50     PLS-00103: Encountered the symbol " city: " when expecting one of      
+         the following:                                                         
+         . ( ) , * @ % & = - + < / > at in is mod remainder not rem =>          
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec as between from using || indicator member                  
+         submultiset                                                            
+                                                                                
+3/61     PLS-00049: bad bind variable 'NEW'                                     
+SQL> CREATE or REPLACE TRIGGER display_customer_trig
+  2          AFTER  INSERT on BankCust_6
+  3          FOR EACH ROW
+  4  BEGIN
+  5          DBMS_OUTPUT.PUT_LINE('From Trigger '||'Customer NO:
+  6  '||:new.custno||' Customer Name: '||:new.custname||' city: '||:new city);
+  7  END;
+  8  /
+
+Warning: Trigger created with compilation errors.
+
+SQL> show errors;
+Errors for TRIGGER DISPLAY_CUSTOMER_TRIG:
+
+LINE/COL ERROR                                                                  
+-------- -----------------------------------------------------------------      
+3/63     PLS-00049: bad bind variable 'NEW'                                     
+3/68     PLS-00103: Encountered the symbol "CITY" when expecting one of         
+         the following:                                                         
+         . ( ) , * @ % & = - + < / > at in is mod remainder not rem =>          
+         <an exponent (**)> <> or != or ~= >= <= <> and or like like2           
+         like4 likec as between from using || indicator member                  
+         submultiset                                                            
+         The symbol "." was substituted for "CITY" to continue.                 
+                                                                                
+SQL> CREATE or REPLACE TRIGGER display_customer_trig
+  2          AFTER  INSERT on BankCust_6
+  3          FOR EACH ROW
+  4  BEGIN
+  5          DBMS_OUTPUT.PUT_LINE('From Trigger '||'Customer NO:
+  6  '||:new.custno||' Customer Name: '||:new.custname||' city: '||:new.city);
+  7  END;
+  8  /
+
+Trigger created.
+
+SQL> show errors;insert into BANKCUST_6 values('c1','Smith','32 Lincoln st','SJ');
+Usage: SHOW ERRORS [{ FUNCTION | PROCEDURE | PACKAGE |
+   PACKAGE BODY | TRIGGER | VIEW 
+   | TYPE | TYPE BODY | DIMENSION 
+   | JAVA SOURCE | JAVA CLASS } [schema.]name]
+SQL> insert into BANKCUST_6 values('c2','Jones','44 Benton st','SJ');
+From Trigger Customer NO:
+c2 Customer Name: Jones city: SJ                      
+
+1 row created.
+
+SQL> insert into BANKCUST_6 values('c3','Peters','12 palm st','SFO');
+From Trigger Customer NO:
+c3 Customer Name: Peters city: SFO                    
+
+1 row created.
+
+SQL> insert into BANKCUST_6 values('c20','Chen','20 san felipo','LA');
+From Trigger Customer NO:
+c20 Customer Name: Chen city: LA                      
+
+1 row created.
+
+SQL> insert into BANKCUST_6 values('c33','Williams','11 cherry
+  2  Ave','SFO');
+From Trigger Customer NO:
+c33 Customer Name: Williams city: SFO                 
+
+1 row created.
+
+SQL> Alter trigger trigger_name disable
+  2  ;
+Alter trigger trigger_name disable
+*
+ERROR at line 1:
+ORA-04080: trigger 'TRIGGER_NAME' does not exist 
+
+
+SQL> Alter trigger trigger_name
+  2  On display_customer_trig disable;
+On display_customer_trig disable
+*
+ERROR at line 2:
+ORA-00922: missing or invalid option 
+
+
+SQL> Alter trigger display_customer_trig disable;
+
+Trigger altered.
+
+SQL> Create Or Replace Trigger Acct_Cust_Trig
+  2  AFTER INSERT ON Accounts_6
+  3  FOR EACH ROW
+  4  BEGIN
+  5  /*If the custno is already in the Totals_6 table, the update will succeed */
+  6          update totals_6
+  7          set totalAmount = totalAmount + :new.amount
+  8          where custno = :new.custno;
+  9  /*If the custno is not in the Totals_6 table, we insert a row intoTotals_6 table. Complete the missing part in te subquery*/
+ 10  insert into totals_6 (select :new.custno, :new.amount from dual
+ 11          where not exists (select * from TOTALS_6 where custno = :new.custno));
+ 12  END;
+ 13  /
+
+Trigger created.
+
+SQL> Show errors
+No errors.
+SQL> Select * from Accounts_6;
+
+no rows selected
+
+SQL> insert into ACCOUNTS_6 values('a1523','checking',2000.00,'c1');
+insert into ACCOUNTS_6 values('a1523','checking',2000.00,'c1')
+            *
+ERROR at line 1:
+ORA-02291: integrity constraint (FKUAN.TOTALS_FKEY) violated - parent key not 
+found 
+ORA-06512: at "FKUAN.ACCT_CUST_TRIG", line 7 
+ORA-04088: error during execution of trigger 'FKUAN.ACCT_CUST_TRIG' 
+
+
+SQL> insert into ACCOUNTS_6 values('a2134','saving',5000.00,'c1');
+insert into ACCOUNTS_6 values('a2134','saving',5000.00,'c1')
+            *
+ERROR at line 1:
+ORA-02291: integrity constraint (FKUAN.TOTALS_FKEY) violated - parent key not 
+found 
+ORA-06512: at "FKUAN.ACCT_CUST_TRIG", line 7 
+ORA-04088: error during execution of trigger 'FKUAN.ACCT_CUST_TRIG' 
+
+
+SQL> insert into ACCOUNTS_6 values('a4378','checking',1000.00,'c2');
+
+1 row created.
+
+SQL> insert into ACCOUNTS_6 values('a5363','saving',8000.00,'c2');
+
+1 row created.
+
+SQL> insert into ACCOUNTS_6 values('a7236','checking',500.00,'c33');
+
+1 row created.
+
+SQL> insert into ACCOUNTS_6 values('a8577','checking',150.00,'c20');Select * from Accounts_6;
+insert into ACCOUNTS_6 values('a8577','checking',150.00,'c20');Select * from Accounts_6
+                                                              *
+ERROR at line 1:
+ORA-00911: invalid character 
+
+
+SQL> 
+SQL> Select * from Accounts_6;
+
+ACCOU ACCOUNTTYP     AMOUNT CUSTN                                               
+----- ---------- ---------- -----                                               
+a4378 checking         1000 c2                                                  
+a5363 saving           8000 c2                                                  
+a7236 checking          500 c33                                                 
+
+SQL> insert into ACCOUNTS_6 values('a1523','checking',2000.00,'c1');
+insert into ACCOUNTS_6 values('a1523','checking',2000.00,'c1')
+            *
+ERROR at line 1:
+ORA-02291: integrity constraint (FKUAN.TOTALS_FKEY) violated - parent key not 
+found 
+ORA-06512: at "FKUAN.ACCT_CUST_TRIG", line 7 
+ORA-04088: error during execution of trigger 'FKUAN.ACCT_CUST_TRIG' 
+
+
+SQL> insert into ACCOUNTS_6 values('a2134','saving',5000.00,'c1');Select * from BankCust;
+insert into ACCOUNTS_6 values('a2134','saving',5000.00,'c1');Select * from BankCust
+                                                            *
+ERROR at line 1:
+ORA-00911: invalid character 
+
+
+SQL> 
+SQL> Select * from BankCust;
+Select * from BankCust
+              *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+SQL> Select * from Bankcust_6;
+
+CUSTN CUSTNAME             STREET                         CITY                  
+----- -------------------- ------------------------------ --------------------  
+c2    Jones                44 Benton st                   SJ                    
+c3    Peters               12 palm st                     SFO                   
+c20   Chen                 20 san felipo                  LA                    
+c33   Williams             11 cherry                      SFO                   
+                           Ave                                                  
+                                                                                
+
+SQL> insert into BANKCUST_6 values('c1','Smith','32 Lincoln st','SJ');
+
+1 row created.
+
+SQL> insert into ACCOUNTS_6 values('a1523','checking',2000.00,'c1');
+
+1 row created.
+
+SQL> insert into ACCOUNTS_6 values('a2134','saving',5000.00,'c1');
+
+1 row created.
+
+SQL> Select * from Totals_6;
+
+CUSTN TOTALAMOUNT                                                               
+----- -----------                                                               
+c2           9000                                                               
+c33           500                                                               
+c1           7000                                                               
+
+SQL> insert into ACCOUNTS_6 values('a8577','checking',150.00,'c20');
+
+1 row created.
+
+SQL> Select * from Totals_6;
+
+CUSTN TOTALAMOUNT                                                               
+----- -----------                                                               
+c2           9000                                                               
+c33           500                                                               
+c1           7000                                                               
+c20           150                                                               
+
+SQL> update Accounts_6
+  2  set amount = 1000
+  3  where accountno = 'a1523';
+
+1 row updated.
+
+SQL> Select * from Totals_6;
+
+CUSTN TOTALAMOUNT                                                               
+----- -----------                                                               
+c2           9000                                                               
+c33           500                                                               
+c1           7000                                                               
+c20           150                                                               
+
+SQL> Select * from Accounts_6;
+
+ACCOU ACCOUNTTYP     AMOUNT CUSTN                                               
+----- ---------- ---------- -----                                               
+a4378 checking         1000 c2                                                  
+a5363 saving           8000 c2                                                  
+a7236 checking          500 c33                                                 
+a1523 checking         1000 c1                                                  
+a2134 saving           5000 c1                                                  
+a8577 checking          150 c20                                                 
+
+6 rows selected.
+
+SQL> update Accounts_6set amount = 1000where accountno = 'a1523';
+update Accounts_6set amount = 1000where accountno = 'a1523'
+                            *
+ERROR at line 1:
+ORA-00971: missing SET keyword 
+
+
+SQL> update Accounts_6
+  2  set amount = 1000
+  3  where accountno = 'a1523';
+
+1 row updated.
+
+SQL> Select * from Totals_6;
+
+CUSTN TOTALAMOUNT                                                               
+----- -----------                                                               
+c2           9000                                                               
+c33           500                                                               
+c1           7000                                                               
+c20           150                                                               
+
+SQL> Create Or Replace Trigger Acct_Cust_Trig
+  2  AFTER INSERT OR UPDATE ON Accounts_6
+  3  FOR EACH ROW
+  4  BEGIN
+  5          If inserting then
+  6                  update totals_6
+  7                  set totalAmount = totalAmount + :new.amount
+  8                  where custno = :new.custno;
+  9  
+ 10                  insert into totals_6 (select :new.custno, :new.amount from dual
+ 11                  where not exists (select * from TOTALS_6
+ 12                  where custno = :new.custno));
+ 13          END IF;
+ 14          if updating then
+ 15                  /* If we are updating we want to correctly set the totalAmount
+ 16                   to the new amount that may be >= or < old amount
+ 17                  Complete the query */
+ 18                  update totals_6
+ 19                  set totalAmount = totalAmount + (totalAmount - :new.amount)
+ 20                  where custno = :new.custno;
+ 21          end if;
+ 22  END;
+ 23  /
+
+Trigger created.
+
+SQL> Select * from Totals_6;
+
+CUSTN TOTALAMOUNT                                                               
+----- -----------                                                               
+c2           9000                                                               
+c33           500                                                               
+c1           7000                                                               
+c20           150                                                               
+
+SQL> Create Or Replace Trigger Acct_Cust_Trig
+  2  AFTER INSERT OR UPDATE ON Accounts_6
+  3  FOR EACH ROW
+  4  BEGIN
+  5          If inserting then
+  6                  update totals_6
+  7                  set totalAmount = totalAmount + :new.amount
+  8                  where custno = :new.custno;
+  9  
+ 10                  insert into totals_6 (select :new.custno, :new.amount from dual
+ 11                  where not exists (select * from TOTALS_6
+ 12                  where custno = :new.custno));
+ 13          END IF;
+ 14          if updating then
+ 15                  /* If we are updating we want to correctly set the totalAmount
+ 16                   to the new amount that may be >= or < old amount
+ 17                  Complete the query */
+ 18                  update totals_6
+ 19                  set totalAmount = totalAmount + (:old.amount - :new.amount)
+ 20                  where custno = :new.custno;
+ 21          end if;
+ 22  END;
+ 23  /
+
+Trigger created.
+
+SQL> Select * from Totals_6;
+
+CUSTN TOTALAMOUNT                                                               
+----- -----------                                                               
+c2           9000                                                               
+c33           500                                                               
+c1           7000                                                               
+c20           150                                                               
+
+SQL> update Accounts_6
+  2  set amount = 1000
+  3  where accountno = 'a1523';
+
+1 row updated.
+
+SQL> Select * from Totals_6;
+
+CUSTN TOTALAMOUNT                                                               
+----- -----------                                                               
+c2           9000                                                               
+c33           500                                                               
+c1           7000                                                               
+c20           150                                                               
+
+SQL> delete from accounts_6;
+
+6 rows deleted.
+
+SQL> delete from totals_6;
+
+4 rows deleted.
+
+SQL> insert into ACCOUNTS_6 values('a1523','checking',2000.00,'c1');
+
+1 row created.
+
+SQL> insert into ACCOUNTS_6 values('a2134','saving',5000.00,'c1');
+
+1 row created.
+
+SQL> insert into ACCOUNTS_6 values('a4378','checking',1000.00,'c2');
+
+1 row created.
+
+SQL> insert into ACCOUNTS_6 values('a5363','saving',8000.00,'c2');
+
+1 row created.
+
+SQL> insert into ACCOUNTS_6 values('a7236','checking',500.00,'c33');
+
+1 row created.
+
+SQL> insert into ACCOUNTS_6 values('a8577','checking',150.00,'c20');Select * from Accounts_6;
+insert into ACCOUNTS_6 values('a8577','checking',150.00,'c20');Select * from Accounts_6
+                                                              *
+ERROR at line 1:
+ORA-00911: invalid character 
+
+
+SQL> insert into ACCOUNTS_6 values('a8577','checking',150.00,'c20');
+
+1 row created.
+
+SQL> update Accounts_6
+  2  set amount = 1000
+  3  where accountno = 'a1523';
+
+1 row updated.
+
+SQL> Select * from Totals_6;
+
+CUSTN TOTALAMOUNT                                                               
+----- -----------                                                               
+c1           8000                                                               
+c2           9000                                                               
+c33           500                                                               
+c20           150                                                               
+
+SQL> Select * from Accounts_6;
+
+ACCOU ACCOUNTTYP     AMOUNT CUSTN                                               
+----- ---------- ---------- -----                                               
+a1523 checking         1000 c1                                                  
+a2134 saving           5000 c1                                                  
+a4378 checking         1000 c2                                                  
+a5363 saving           8000 c2                                                  
+a7236 checking          500 c33                                                 
+a8577 checking          150 c20                                                 
+
+6 rows selected.
+
+SQL> Create Or Replace Trigger Acct_Cust_Trig
+  2  AFTER INSERT OR UPDATE ON Accounts_6
+  3  FOR EACH ROW
+  4  BEGIN
+  5          If inserting then
+  6                  update totals_6
+  7                  set totalAmount = totalAmount + :new.amount
+  8                  where custno = :new.custno;
+  9  
+ 10                  insert into totals_6 (select :new.custno, :new.amount from dual
+ 11                  where not exists (select * from TOTALS_6
+ 12                  where custno = :new.custno));
+ 13          END IF;
+ 14          if updating then
+ 15                  /* If we are updating we want to correctly set the totalAmount
+ 16                   to the new amount that may be >= or < old amount
+ 17                  Complete the query */
+ 18                  update totals_6
+ 19                  set totalAmount = totalAmount + (:new.amount - :old.amount)
+ 20                  where custno = :new.custno;
+ 21          end if;
+ 22  END;
+ 23  /
+
+Trigger created.
+
+SQL> delete from accounts_6;
+
+6 rows deleted.
+
+SQL> delete from totals_6;
+
+4 rows deleted.
+
+SQL> insert into ACCOUNTS_6 values('a1523','checking',2000.00,'c1');
+
+1 row created.
+
+SQL> insert into ACCOUNTS_6 values('a2134','saving',5000.00,'c1');
+
+1 row created.
+
+SQL> insert into ACCOUNTS_6 values('a4378','checking',1000.00,'c2');
+
+1 row created.
+
+SQL> insert into ACCOUNTS_6 values('a5363','saving',8000.00,'c2');
+
+1 row created.
+
+SQL> insert into ACCOUNTS_6 values('a7236','checking',500.00,'c33');
+
+1 row created.
+
+SQL> insert into ACCOUNTS_6 values('a8577','checking',150.00,'c20');
+
+1 row created.
+
+SQL> 
+SQL> update Accounts_6
+  2  set amount = 1000
+  3  where accountno = 'a1523';
+
+1 row updated.
+
+SQL> Select * from totals_6;
+
+CUSTN TOTALAMOUNT                                                               
+----- -----------                                                               
+c1           6000                                                               
+c2           9000                                                               
+c33           500                                                               
+c20           150                                                               
+
+SQL> Create Or Replace Trigger NoUpdatePK_trig
+  2  
+  3  After UPDATE ON BANKCUST_6
+  4  For each row
+  5  BEGIN
+  6          if updating ('custno')  then
+  7          raise_application_error (-20999,'Cannot update a Primary Key');
+  8          End if;
+  9  END;
+ 10  /
+
+Trigger created.
+
+SQL> show errors;
+No errors.
+SQL> UPDATE BANKCUST_6
+  2  Set custno='c99'
+  3  Where custno='c1';
+UPDATE BANKCUST_6
+       *
+ERROR at line 1:
+ORA-20999: Cannot update a Primary Key 
+ORA-06512: at "FKUAN.NOUPDATEPK_TRIG", line 3 
+ORA-04088: error during execution of trigger 'FKUAN.NOUPDATEPK_TRIG' 
+
+
+SQL> spool off

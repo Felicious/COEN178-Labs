@@ -1,0 +1,2689 @@
+SQL> Select * from AlphaCoEmp;
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Psaki                                                   0                       
+Reinstein                                               0                       
+Roche                                                   0                       
+Rouse                                                   0                       
+Sathe                                                   0                       
+Schulman                                                0                       
+Seymour                                                 0                       
+Shapiro                                                 0                       
+Shaw                                                    0                       
+Sher                                                    0                       
+Showers                                                 0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Siegel                                                  0                       
+Sirbu                                                   0                       
+Stephens                                                0                       
+Sutton                                                  0                       
+Adams                                                   0                       
+Alley                                                   0                       
+Anello                                                  0                       
+Barnes                                                  0                       
+Bates                                                   0                       
+Bedingfield                                             0                       
+Chaifetz                                                0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Clarke                                                  0                       
+Cobbina                                                 0                       
+Crutchfield                                             0                       
+Dalheim                                                 0                       
+Ealons                                                  0                       
+Escobar                                                 0                       
+Farrell                                                 0                       
+Gaspard                                                 0                       
+Groth                                                   0                       
+Heimbach                                                0                       
+Jawando                                                 0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Kennedy                                                 0                       
+Konwinski                                               0                       
+Lewis                                                   0                       
+Liddell-Westefeld                                       0                       
+Limon                                                   0                       
+Loeb                                                    0                       
+London                                                  0                       
+Maher                                                   0                       
+Messina                                                 0                       
+Monje, Jr.                                              0                       
+Newell                                                  0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Nicholson, Jr.                                          0                       
+Noel                                                    0                       
+Oleske                                                  0                       
+Page                                                    0                       
+Terry                                                   0                       
+Vanderslice                                             0                       
+Wear                                                    0                       
+White                                                   0                       
+Yeager Kaplan                                           0                       
+Young, Jr.                                              0                       
+Quinn                                                   0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Raizk                                                   0                       
+Reed                                                    0                       
+Ryan                                                    0                       
+Sahgal                                                  0                       
+Sass                                                    0                       
+Schafer                                                 0                       
+Schwartz                                                0                       
+Sibley                                                  0                       
+Singiser                                                0                       
+Starkey                                                 0                       
+Swanson                                                 0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Tamarin                                                 0                       
+Tchen                                                   0                       
+Agnew                                                   0                       
+Bauer                                                   0                       
+Beliveau                                                0                       
+Bhowmik                                                 0                       
+Brennan                                                 0                       
+Buffett                                                 0                       
+Carrier                                                 0                       
+Cherlin                                                 0                       
+Cizner                                                  0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Cokley                                                  0                       
+Colvin                                                  0                       
+Cuellar                                                 0                       
+Cutter                                                  0                       
+Deese                                                   0                       
+Dillon                                                  0                       
+Donilon                                                 0                       
+Dorsett                                                 0                       
+Fernandez                                               0                       
+Frank                                                   0                       
+Frankel                                                 0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Frye                                                    0                       
+Gonzalez                                                0                       
+Graham                                                  0                       
+Hoang                                                   0                       
+Hopkins                                                 0                       
+Inouye                                                  0                       
+Johnson                                                 0                       
+Kelleher, Jr.                                           0                       
+Larus                                                   0                       
+Lynn                                                    0                       
+Mackey                                                  0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+McCarthy                                                0                       
+McGinnis                                                0                       
+McGuire                                                 0                       
+Mosteller                                               0                       
+Mueller                                                 0                       
+Murtha                                                  0                       
+Onek                                                    0                       
+Papas                                                   0                       
+Parker                                                  0                       
+Paulsen                                                 0                       
+Phillips, III                                           0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Turton                                                  0                       
+Voorman                                                 0                       
+Watson                                                  0                       
+Wright                                                  0                       
+Pojman                                                  0                       
+Pope                                                    0                       
+Rodriguez                                               0                       
+Sutphen                                                 0                       
+Asen                                                    0                       
+Belive                                                  0                       
+Browner                                                 0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Brundage                                                0                       
+Brush                                                   0                       
+Cardwell                                                0                       
+Chen                                                    0                       
+Chiodo                                                  0                       
+Corrigan                                                0                       
+Crowley                                                 0                       
+Davies                                                  0                       
+Devine                                                  0                       
+Edgerton                                                0                       
+Edmonds                                                 0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Eisen                                                   0                       
+Espinel                                                 0                       
+Favreau                                                 0                       
+Gardaphe                                                0                       
+Gillette                                                0                       
+Gomez                                                   0                       
+Gottry                                                  0                       
+Grant                                                   0                       
+Green                                                   0                       
+Harper                                                  0                       
+Hughes                                                  0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Hurwitz                                                 0                       
+Juska                                                   0                       
+Kammerer                                                0                       
+Kimball                                                 0                       
+Kommareddi                                              0                       
+Kravis                                                  0                       
+LaBolt                                                  0                       
+Lerner                                                  0                       
+Lewin                                                   0                       
+Lippert                                                 0                       
+Lovett                                                  0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Martin                                                  0                       
+Massey                                                  0                       
+Mattson                                                 0                       
+McDonough                                               0                       
+Milakofsky                                              0                       
+Miranda                                                 0                       
+Mu??oz                                                  0                       
+Muntz                                                   0                       
+Odio                                                    0                       
+Thomas                                                  0                       
+Zichal                                                  0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Portilla                                                0                       
+Posey                                                   0                       
+Richardson                                              0                       
+Rittner                                                 0                       
+Roach                                                   0                       
+Ruemmler                                                0                       
+Samuels                                                 0                       
+Schmuck                                                 0                       
+Simas                                                   0                       
+Skoczek                                                 0                       
+Spencer                                                 0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Ayling                                                  0                       
+Becnel                                                  0                       
+Binns                                                   0                       
+Birdsall                                                0                       
+Bond                                                    0                       
+Branch                                                  0                       
+Brewer                                                  0                       
+Brown                                                   0                       
+Campos                                                  0                       
+Carter                                                  0                       
+Claude                                                  0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Cohen                                                   0                       
+Davis                                                   0                       
+Dunn                                                    0                       
+Edwards                                                 0                       
+Emanuel                                                 0                       
+Faulman                                                 0                       
+Greene                                                  0                       
+Hegde                                                   0                       
+Hernandez                                               0                       
+Hiatt                                                   0                       
+Hogan                                                   0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Kochman                                                 0                       
+Koo                                                     0                       
+Krass                                                   0                       
+Lartey                                                  0                       
+Leitner-Laserna                                         0                       
+Lelyveld                                                0                       
+Lezotte                                                 0                       
+Liegel                                                  0                       
+Lillie                                                  0                       
+Lu                                                      0                       
+Naidoff                                                 0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Narechania                                              0                       
+Oxtoby                                                  0                       
+Pipkins                                                 0                       
+Trainor                                                 0                       
+Tranchin                                                0                       
+Turk                                                    0                       
+Valencia                                                0                       
+Vogel                                                   0                       
+Wade                                                    0                       
+Pulliam                                                 0                       
+Samuels, Jr.                                            0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Schuker                                                 0                       
+Smoot                                                   0                       
+Stickel                                                 0                       
+Stoev                                                   0                       
+Stone                                                   0                       
+Summers                                                 0                       
+Sweeney                                                 0                       
+Teehee                                                  0                       
+Albino                                                  0                       
+Aldy, Jr.                                               0                       
+Anderson                                                0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Baldassaro                                              0                       
+Beinart                                                 0                       
+Blake                                                   0                       
+Chambers                                                0                       
+Coven                                                   0                       
+Cuba                                                    0                       
+Cunningham                                              0                       
+DeGuzman                                                0                       
+DeRosa                                                  0                       
+Fenn                                                    0                       
+Finlen                                                  0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Fiscus                                                  0                       
+Fitts                                                   0                       
+Ford                                                    0                       
+Gage                                                    0                       
+Gray                                                    0                       
+Hanson                                                  0                       
+Harris                                                  0                       
+Hash                                                    0                       
+Jabbour                                                 0                       
+Jackson                                                 0                       
+Jarrett                                                 0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Jarvis-Shean                                            0                       
+Jean-Pierre                                             0                       
+Kalbaugh                                                0                       
+Kale                                                    0                       
+Kelly                                                   0                       
+Levine                                                  0                       
+Love                                                    0                       
+Maska                                                   0                       
+McGrath                                                 0                       
+Metcalf                                                 0                       
+Mrazek                                                  0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Neralla                                                 0                       
+Paige                                                   0                       
+Papa                                                    0                       
+Pfeiffer                                                0                       
+Phadke                                                  0                       
+Tennison                                                0                       
+Terrell                                                 0                       
+Tucker                                                  0                       
+Watkins                                                 0                       
+Webster                                                 0                       
+Young                                                   0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Zelman                                                  0                       
+Pourmorad                                               0                       
+Rivadeneira                                             0                       
+Robertson                                               0                       
+Rosalsky                                                0                       
+Sabochik                                                0                       
+Sanders                                                 0                       
+Schiliro                                                0                       
+Shah                                                    0                       
+Sheehy                                                  0                       
+Strautmanis                                             0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Swire                                                   0                       
+Bassin                                                  0                       
+Bressler                                                0                       
+Burman                                                  0                       
+Carden                                                  0                       
+De Sio, Jr.                                             0                       
+Douglas                                                 0                       
+DuBois                                                  0                       
+Dyer                                                    0                       
+Earnest                                                 0                       
+Firestone                                               0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Garcia                                                  0                       
+Gavin, Jr.                                              0                       
+Hennigan                                                0                       
+Hornsby                                                 0                       
+Hurley                                                  0                       
+Jamison                                                 0                       
+Kim                                                     0                       
+King                                                    0                       
+Kramer                                                  0                       
+Lee                                                     0                       
+Leger                                                   0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Lepow                                                   0                       
+Lorjuste                                                0                       
+Markovitz                                               0                       
+McBride                                                 0                       
+McNeal                                                  0                       
+Monteiro                                                0                       
+Nathan                                                  0                       
+Neiman                                                  0                       
+Ocampo                                                  0                       
+Offerman                                                0                       
+Olmos                                                   0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Olson                                                   0                       
+Ortiz                                                   0                       
+Pate                                                    0                       
+Thorbjornsen                                            0                       
+Tubman                                                  0                       
+Tucci                                                   0                       
+Vietor                                                  0                       
+Wang-Levine                                             0                       
+Witt                                                    0                       
+Rathod                                                  0                       
+Reeves                                                  0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Santucci                                                0                       
+Saunders                                                0                       
+Schaub                                                  0                       
+Sinha                                                   0                       
+Tate-Gilmore                                            0                       
+Abrams                                                  0                       
+Attili                                                  0                       
+Axelrod                                                 0                       
+Bernard                                                 0                       
+Beverly                                                 0                       
+Burton                                                  0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Campoverdi                                              0                       
+Camu??ez                                                0                       
+Castillo                                                0                       
+Chhabra                                                 0                       
+Conrad                                                  0                       
+Cusack                                                  0                       
+DeGuzman, Jr.                                           0                       
+DeParle                                                 0                       
+Donovan                                                 0                       
+Droege                                                  0                       
+Fernkas                                                 0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Flatgard                                                0                       
+Freeman                                                 0                       
+Godfrey                                                 0                       
+Goodman                                                 0                       
+Greenawalt                                              0                       
+Jarvis                                                  0                       
+Jones                                                   0                       
+Jung                                                    0                       
+Kocher                                                  0                       
+Kumar                                                   0                       
+Lechtenberg                                             0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Ledbetter                                               0                       
+Lesser                                                  0                       
+Lipton                                                  0                       
+McCathran                                               0                       
+Mehrbani                                                0                       
+Millison                                                0                       
+Moilanen                                                0                       
+Nabors                                                  0                       
+Nelson                                                  0                       
+Northern                                                0                       
+Thomas, III                                             0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Verrilli                                                0                       
+Walsh                                                   0                       
+Whichard, IV                                            0                       
+Winter                                                  0                       
+Roberts                                                 0                       
+Roddick                                                 0                       
+Rundlet                                                 0                       
+Setser                                                  0                       
+Smith                                                   0                       
+Sobel                                                   0                       
+Stoneman                                                0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Stracko                                                 0                       
+Taggart, Jr.                                            0                       
+Amorsingh                                               0                       
+Andrias                                                 0                       
+Baggetto                                                0                       
+Baskerville, Jr.                                        0                       
+Bisi                                                    0                       
+Block                                                   0                       
+Blount                                                  0                       
+Bookey-Baker                                            0                       
+Brooke                                                  0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Burnough                                                0                       
+Campbell                                                0                       
+Canery                                                  0                       
+Cushman                                                 0                       
+Dale                                                    0                       
+Fergenson                                               0                       
+Finkenbinder                                            0                       
+Furman                                                  0                       
+Gibbs                                                   0                       
+Gottlieb                                                0                       
+Hable                                                   0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Higginbottom                                            0                       
+Hitchcock                                               0                       
+Johnston                                                0                       
+Kang                                                    0                       
+Keenan                                                  0                       
+Kiley                                                   0                       
+Kohnke                                                  0                       
+Lehrich                                                 0                       
+Lipsky                                                  0                       
+Luck                                                    0                       
+Mack                                                    0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Mastromonaco                                            0                       
+Mayekar                                                 0                       
+McLaughlin                                              0                       
+Millett                                                 0                       
+Nguyen                                                  0                       
+Odintz                                                  0                       
+Perez                                                   0                       
+Tseggai                                                 0                       
+Utech                                                   0                       
+Vale                                                    0                       
+Vega                                                    0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Weiser                                                  0                       
+Whitty                                                  0                       
+Williams                                                0                       
+Wilson                                                  0                       
+Wong                                                    0                       
+
+434 rows selected.
+
+SQL> Create Table Emp_Work(name VARCHAR(25) Primary Key, Project VARCHAR(20) default NULL,Constraint FK_AlphaCoForeign Key (name) REFERENCES AlphaCoEmp(name));
+Create Table Emp_Work(name VARCHAR(25) Primary Key, Project VARCHAR(20) default NULL,Constraint FK_AlphaCoForeign Key (name) REFERENCES AlphaCoEmp(name))
+                                                                                                                      *
+ERROR at line 1:
+ORA-00902: invalid datatype 
+
+
+SQL> Create Table Emp_Work(name VARCHAR(25) Primary Key,
+  2  Project VARCHAR(20) default NULL,
+  3  Constraint FK_AlphaCo
+  4  Foreign Key (name) REFERENCES AlphaCoEmp(name));
+
+Table created.
+
+SQL> Insert into Emp_Work(name) Select Name from AlphaCoEmp
+  2  where REGEXP_LIKE(name,'(^[ags])','i');
+
+83 rows created.
+
+SQL> Select * from Emp_Workl
+  2  ;
+Select * from Emp_Workl
+              *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+SQL> Select * from Emp_Work;
+
+NAME                      PROJECT                                               
+------------------------- --------------------                                  
+Abrams                                                                          
+Adams                                                                           
+Agnew                                                                           
+Albino                                                                          
+Aldy, Jr.                                                                       
+Alley                                                                           
+Amorsingh                                                                       
+Anderson                                                                        
+Andrias                                                                         
+Anello                                                                          
+Asen                                                                            
+
+NAME                      PROJECT                                               
+------------------------- --------------------                                  
+Attili                                                                          
+Axelrod                                                                         
+Ayling                                                                          
+Gage                                                                            
+Garcia                                                                          
+Gardaphe                                                                        
+Gaspard                                                                         
+Gavin, Jr.                                                                      
+Gibbs                                                                           
+Gillette                                                                        
+Godfrey                                                                         
+
+NAME                      PROJECT                                               
+------------------------- --------------------                                  
+Gomez                                                                           
+Gonzalez                                                                        
+Goodman                                                                         
+Gottlieb                                                                        
+Gottry                                                                          
+Graham                                                                          
+Grant                                                                           
+Gray                                                                            
+Green                                                                           
+Greenawalt                                                                      
+Greene                                                                          
+
+NAME                      PROJECT                                               
+------------------------- --------------------                                  
+Groth                                                                           
+Sabochik                                                                        
+Sahgal                                                                          
+Samuels                                                                         
+Samuels, Jr.                                                                    
+Sanders                                                                         
+Santucci                                                                        
+Sass                                                                            
+Sathe                                                                           
+Saunders                                                                        
+Schafer                                                                         
+
+NAME                      PROJECT                                               
+------------------------- --------------------                                  
+Schaub                                                                          
+Schiliro                                                                        
+Schmuck                                                                         
+Schuker                                                                         
+Schulman                                                                        
+Schwartz                                                                        
+Setser                                                                          
+Seymour                                                                         
+Shah                                                                            
+Shapiro                                                                         
+Shaw                                                                            
+
+NAME                      PROJECT                                               
+------------------------- --------------------                                  
+Sheehy                                                                          
+Sher                                                                            
+Showers                                                                         
+Sibley                                                                          
+Siegel                                                                          
+Simas                                                                           
+Singiser                                                                        
+Sinha                                                                           
+Sirbu                                                                           
+Skoczek                                                                         
+Smith                                                                           
+
+NAME                      PROJECT                                               
+------------------------- --------------------                                  
+Smoot                                                                           
+Sobel                                                                           
+Spencer                                                                         
+Starkey                                                                         
+Stephens                                                                        
+Stickel                                                                         
+Stoev                                                                           
+Stone                                                                           
+Stoneman                                                                        
+Stracko                                                                         
+Strautmanis                                                                     
+
+NAME                      PROJECT                                               
+------------------------- --------------------                                  
+Summers                                                                         
+Sutphen                                                                         
+Sutton                                                                          
+Swanson                                                                         
+Sweeney                                                                         
+Swire                                                                           
+
+83 rows selected.
+
+SQL> Select Name from AlphaCoEmp where REGEXP_LIKE(name,'(^[ags])','i');
+
+NAME                                                                            
+-------------------------                                                       
+Abrams                                                                          
+Adams                                                                           
+Agnew                                                                           
+Albino                                                                          
+Aldy, Jr.                                                                       
+Alley                                                                           
+Amorsingh                                                                       
+Anderson                                                                        
+Andrias                                                                         
+Anello                                                                          
+Asen                                                                            
+
+NAME                                                                            
+-------------------------                                                       
+Attili                                                                          
+Axelrod                                                                         
+Ayling                                                                          
+Gage                                                                            
+Garcia                                                                          
+Gardaphe                                                                        
+Gaspard                                                                         
+Gavin, Jr.                                                                      
+Gibbs                                                                           
+Gillette                                                                        
+Godfrey                                                                         
+
+NAME                                                                            
+-------------------------                                                       
+Gomez                                                                           
+Gonzalez                                                                        
+Goodman                                                                         
+Gottlieb                                                                        
+Gottry                                                                          
+Graham                                                                          
+Grant                                                                           
+Gray                                                                            
+Green                                                                           
+Greenawalt                                                                      
+Greene                                                                          
+
+NAME                                                                            
+-------------------------                                                       
+Groth                                                                           
+Sabochik                                                                        
+Sahgal                                                                          
+Samuels                                                                         
+Samuels, Jr.                                                                    
+Sanders                                                                         
+Santucci                                                                        
+Sass                                                                            
+Sathe                                                                           
+Saunders                                                                        
+Schafer                                                                         
+
+NAME                                                                            
+-------------------------                                                       
+Schaub                                                                          
+Schiliro                                                                        
+Schmuck                                                                         
+Schuker                                                                         
+Schulman                                                                        
+Schwartz                                                                        
+Setser                                                                          
+Seymour                                                                         
+Shah                                                                            
+Shapiro                                                                         
+Shaw                                                                            
+
+NAME                                                                            
+-------------------------                                                       
+Sheehy                                                                          
+Sher                                                                            
+Showers                                                                         
+Sibley                                                                          
+Siegel                                                                          
+Simas                                                                           
+Singiser                                                                        
+Sinha                                                                           
+Sirbu                                                                           
+Skoczek                                                                         
+Smith                                                                           
+
+NAME                                                                            
+-------------------------                                                       
+Smoot                                                                           
+Sobel                                                                           
+Spencer                                                                         
+Starkey                                                                         
+Stephens                                                                        
+Stickel                                                                         
+Stoev                                                                           
+Stone                                                                           
+Stoneman                                                                        
+Stracko                                                                         
+Strautmanis                                                                     
+
+NAME                                                                            
+-------------------------                                                       
+Summers                                                                         
+Sutphen                                                                         
+Sutton                                                                          
+Swanson                                                                         
+Sweeney                                                                         
+Swire                                                                           
+
+83 rows selected.
+
+SQL> ;
+  1* Select Name from AlphaCoEmp where REGEXP_LIKE(name,'(^[ags])','i')
+SQL> 
+SQL> ;
+  1* Select Name from AlphaCoEmp where REGEXP_LIKE(name,'(^[ags])','i')
+SQL> Select Name from AlphaCoEmp where REGEXP_LIKE(name,'(^[ags])','i');
+
+NAME                                                                            
+-------------------------                                                       
+Abrams                                                                          
+Adams                                                                           
+Agnew                                                                           
+Albino                                                                          
+Aldy, Jr.                                                                       
+Alley                                                                           
+Amorsingh                                                                       
+Anderson                                                                        
+Andrias                                                                         
+Anello                                                                          
+Asen                                                                            
+
+NAME                                                                            
+-------------------------                                                       
+Attili                                                                          
+Axelrod                                                                         
+Ayling                                                                          
+Gage                                                                            
+Garcia                                                                          
+Gardaphe                                                                        
+Gaspard                                                                         
+Gavin, Jr.                                                                      
+Gibbs                                                                           
+Gillette                                                                        
+Godfrey                                                                         
+
+NAME                                                                            
+-------------------------                                                       
+Gomez                                                                           
+Gonzalez                                                                        
+Goodman                                                                         
+Gottlieb                                                                        
+Gottry                                                                          
+Graham                                                                          
+Grant                                                                           
+Gray                                                                            
+Green                                                                           
+Greenawalt                                                                      
+Greene                                                                          
+
+NAME                                                                            
+-------------------------                                                       
+Groth                                                                           
+Sabochik                                                                        
+Sahgal                                                                          
+Samuels                                                                         
+Samuels, Jr.                                                                    
+Sanders                                                                         
+Santucci                                                                        
+Sass                                                                            
+Sathe                                                                           
+Saunders                                                                        
+Schafer                                                                         
+
+NAME                                                                            
+-------------------------                                                       
+Schaub                                                                          
+Schiliro                                                                        
+Schmuck                                                                         
+Schuker                                                                         
+Schulman                                                                        
+Schwartz                                                                        
+Setser                                                                          
+Seymour                                                                         
+Shah                                                                            
+Shapiro                                                                         
+Shaw                                                                            
+
+NAME                                                                            
+-------------------------                                                       
+Sheehy                                                                          
+Sher                                                                            
+Showers                                                                         
+Sibley                                                                          
+Siegel                                                                          
+Simas                                                                           
+Singiser                                                                        
+Sinha                                                                           
+Sirbu                                                                           
+Skoczek                                                                         
+Smith                                                                           
+
+NAME                                                                            
+-------------------------                                                       
+Smoot                                                                           
+Sobel                                                                           
+Spencer                                                                         
+Starkey                                                                         
+Stephens                                                                        
+Stickel                                                                         
+Stoev                                                                           
+Stone                                                                           
+Stoneman                                                                        
+Stracko                                                                         
+Strautmanis                                                                     
+
+NAME                                                                            
+-------------------------                                                       
+Summers                                                                         
+Sutphen                                                                         
+Sutton                                                                          
+Swanson                                                                         
+Sweeney                                                                         
+Swire                                                                           
+
+83 rows selected.
+
+SQL> Delete from AlphaCoEmpWhere name=’Stone’;
+Delete from AlphaCoEmpWhere name=’Stone’
+                                *
+ERROR at line 1:
+ORA-00933: SQL command not properly ended 
+
+
+SQL> Delete from AlphaCoEmp Where name =’Stone’;
+Delete from AlphaCoEmp Where name =’Stone’
+                                   *
+ERROR at line 1:
+ORA-00911: invalid character 
+
+
+SQL> Delete from AlphaCoEmp Where name = ’Stone’;
+Delete from AlphaCoEmp Where name = ’Stone’
+                                    *
+ERROR at line 1:
+ORA-00911: invalid character 
+
+
+SQL> Delete from AlphaCoEmp Where name=’Stone’;
+Delete from AlphaCoEmp Where name=’Stone’
+                                  *
+ERROR at line 1:
+ORA-00911: invalid character 
+
+
+SQL> Select * from AlphaCoEmp where name= 'Stone';
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Stone                                                   0                       
+
+SQL> Delete from AlphaCoEmp Where name=’Stone’;
+Delete from AlphaCoEmp Where name=’Stone’
+                                  *
+ERROR at line 1:
+ORA-00911: invalid character 
+
+
+SQL> Delete from AlphaCoEmp Where name= 'Stone';
+Delete from AlphaCoEmp Where name= 'Stone'
+*
+ERROR at line 1:
+ORA-02292: integrity constraint (FKUAN.FK_ALPHACO) violated - child record 
+found 
+
+
+SQL> Alter table Emp_Work
+  2  drop constraint FK_AlphaCo;
+
+Table altered.
+
+SQL> 
+SQL> Alter table Emp_Work
+  2  add constraint FK_AlphaCo
+  3  FOREIGN KEY (name)references AlphaCoEmp(name)
+  4  on delete cascade;
+
+Table altered.
+
+SQL> Delete from AlphaCoEmp Where name='Stone';
+
+1 row deleted.
+
+SQL> Select name from AlphaCoEmp where name= 'Stone';
+
+no rows selected
+
+SQL> Create or Replace Procedure DisplayMessage(message in VARCHAR) As BEGIN
+  2  DBMS_OUTPUT.put_line('Hello '||message);
+  3  END;
+  4  /
+
+Procedure created.
+
+SQL> Show Errors;exec DisplayMessage(‘include a message’)
+Usage: SHOW ERRORS [{ FUNCTION | PROCEDURE | PACKAGE |
+   PACKAGE BODY | TRIGGER | VIEW 
+   | TYPE | TYPE BODY | DIMENSION 
+   | JAVA SOURCE | JAVA CLASS } [schema.]name]
+SQL> Select ROUND(DBMS_RANDOM.value (10,100)) from DUAL;
+
+ROUND(DBMS_RANDOM.VALUE(10,100))                                                
+--------------------------------                                                
+                              21                                                
+
+SQL> Create or Replace Procedure setSalaries(low in INTEGER, high in INTEGER)
+  2  As Cursor Emp_cur IS
+  3          Select * from AlphaCoEmp;
+  4          --Local variables
+  5          l_emprec Emp_cur%rowtype;
+  6          l_salary AlphaCoEmp.salary%type;
+  7  BEGIN
+  8          for l_emprec IN Emp_cur
+  9          loop
+ 10                  l_salary := ROUND(dbms_random.value(low,high));
+ 11                  update AlphaCoEmp
+ 12                  set salary = l_salary
+ 13                  where name = l_emprec.name;
+ 14          END LOOP;
+ 15          commit;
+ 16  END;
+ 17  /
+
+Procedure created.
+
+SQL> show errors;exec setSalaries (50000,100000);
+Usage: SHOW ERRORS [{ FUNCTION | PROCEDURE | PACKAGE |
+   PACKAGE BODY | TRIGGER | VIEW 
+   | TYPE | TYPE BODY | DIMENSION 
+   | JAVA SOURCE | JAVA CLASS } [schema.]name]
+SQL> select * on AlphaCoEmp table;
+select * on AlphaCoEmp table
+         *
+ERROR at line 1:
+ORA-00923: FROM keyword not found where expected 
+
+
+SQL> select * from AlphaCoEmp;
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Psaki                                                   0                       
+Reinstein                                               0                       
+Roche                                                   0                       
+Rouse                                                   0                       
+Sathe                                                   0                       
+Schulman                                                0                       
+Seymour                                                 0                       
+Shapiro                                                 0                       
+Shaw                                                    0                       
+Sher                                                    0                       
+Showers                                                 0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Siegel                                                  0                       
+Sirbu                                                   0                       
+Stephens                                                0                       
+Sutton                                                  0                       
+Adams                                                   0                       
+Alley                                                   0                       
+Anello                                                  0                       
+Barnes                                                  0                       
+Bates                                                   0                       
+Bedingfield                                             0                       
+Chaifetz                                                0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Clarke                                                  0                       
+Cobbina                                                 0                       
+Crutchfield                                             0                       
+Dalheim                                                 0                       
+Ealons                                                  0                       
+Escobar                                                 0                       
+Farrell                                                 0                       
+Gaspard                                                 0                       
+Groth                                                   0                       
+Heimbach                                                0                       
+Jawando                                                 0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Kennedy                                                 0                       
+Konwinski                                               0                       
+Lewis                                                   0                       
+Liddell-Westefeld                                       0                       
+Limon                                                   0                       
+Loeb                                                    0                       
+London                                                  0                       
+Maher                                                   0                       
+Messina                                                 0                       
+Monje, Jr.                                              0                       
+Newell                                                  0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Nicholson, Jr.                                          0                       
+Noel                                                    0                       
+Oleske                                                  0                       
+Page                                                    0                       
+Terry                                                   0                       
+Vanderslice                                             0                       
+Wear                                                    0                       
+White                                                   0                       
+Yeager Kaplan                                           0                       
+Young, Jr.                                              0                       
+Quinn                                                   0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Raizk                                                   0                       
+Reed                                                    0                       
+Ryan                                                    0                       
+Sahgal                                                  0                       
+Sass                                                    0                       
+Schafer                                                 0                       
+Schwartz                                                0                       
+Sibley                                                  0                       
+Singiser                                                0                       
+Starkey                                                 0                       
+Swanson                                                 0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Tamarin                                                 0                       
+Tchen                                                   0                       
+Agnew                                                   0                       
+Bauer                                                   0                       
+Beliveau                                                0                       
+Bhowmik                                                 0                       
+Brennan                                                 0                       
+Buffett                                                 0                       
+Carrier                                                 0                       
+Cherlin                                                 0                       
+Cizner                                                  0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Cokley                                                  0                       
+Colvin                                                  0                       
+Cuellar                                                 0                       
+Cutter                                                  0                       
+Deese                                                   0                       
+Dillon                                                  0                       
+Donilon                                                 0                       
+Dorsett                                                 0                       
+Fernandez                                               0                       
+Frank                                                   0                       
+Frankel                                                 0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Frye                                                    0                       
+Gonzalez                                                0                       
+Graham                                                  0                       
+Hoang                                                   0                       
+Hopkins                                                 0                       
+Inouye                                                  0                       
+Johnson                                                 0                       
+Kelleher, Jr.                                           0                       
+Larus                                                   0                       
+Lynn                                                    0                       
+Mackey                                                  0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+McCarthy                                                0                       
+McGinnis                                                0                       
+McGuire                                                 0                       
+Mosteller                                               0                       
+Mueller                                                 0                       
+Murtha                                                  0                       
+Onek                                                    0                       
+Papas                                                   0                       
+Parker                                                  0                       
+Paulsen                                                 0                       
+Phillips, III                                           0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Turton                                                  0                       
+Voorman                                                 0                       
+Watson                                                  0                       
+Wright                                                  0                       
+Pojman                                                  0                       
+Pope                                                    0                       
+Rodriguez                                               0                       
+Sutphen                                                 0                       
+Asen                                                    0                       
+Belive                                                  0                       
+Browner                                                 0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Brundage                                                0                       
+Brush                                                   0                       
+Cardwell                                                0                       
+Chen                                                    0                       
+Chiodo                                                  0                       
+Corrigan                                                0                       
+Crowley                                                 0                       
+Davies                                                  0                       
+Devine                                                  0                       
+Edgerton                                                0                       
+Edmonds                                                 0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Eisen                                                   0                       
+Espinel                                                 0                       
+Favreau                                                 0                       
+Gardaphe                                                0                       
+Gillette                                                0                       
+Gomez                                                   0                       
+Gottry                                                  0                       
+Grant                                                   0                       
+Green                                                   0                       
+Harper                                                  0                       
+Hughes                                                  0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Hurwitz                                                 0                       
+Juska                                                   0                       
+Kammerer                                                0                       
+Kimball                                                 0                       
+Kommareddi                                              0                       
+Kravis                                                  0                       
+LaBolt                                                  0                       
+Lerner                                                  0                       
+Lewin                                                   0                       
+Lippert                                                 0                       
+Lovett                                                  0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Martin                                                  0                       
+Massey                                                  0                       
+Mattson                                                 0                       
+McDonough                                               0                       
+Milakofsky                                              0                       
+Miranda                                                 0                       
+Mu??oz                                                  0                       
+Muntz                                                   0                       
+Odio                                                    0                       
+Thomas                                                  0                       
+Zichal                                                  0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Portilla                                                0                       
+Posey                                                   0                       
+Richardson                                              0                       
+Rittner                                                 0                       
+Roach                                                   0                       
+Ruemmler                                                0                       
+Samuels                                                 0                       
+Schmuck                                                 0                       
+Simas                                                   0                       
+Skoczek                                                 0                       
+Spencer                                                 0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Ayling                                                  0                       
+Becnel                                                  0                       
+Binns                                                   0                       
+Birdsall                                                0                       
+Bond                                                    0                       
+Branch                                                  0                       
+Brewer                                                  0                       
+Brown                                                   0                       
+Campos                                                  0                       
+Carter                                                  0                       
+Claude                                                  0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Cohen                                                   0                       
+Davis                                                   0                       
+Dunn                                                    0                       
+Edwards                                                 0                       
+Emanuel                                                 0                       
+Faulman                                                 0                       
+Greene                                                  0                       
+Hegde                                                   0                       
+Hernandez                                               0                       
+Hiatt                                                   0                       
+Hogan                                                   0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Kochman                                                 0                       
+Koo                                                     0                       
+Krass                                                   0                       
+Lartey                                                  0                       
+Leitner-Laserna                                         0                       
+Lelyveld                                                0                       
+Lezotte                                                 0                       
+Liegel                                                  0                       
+Lillie                                                  0                       
+Lu                                                      0                       
+Naidoff                                                 0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Narechania                                              0                       
+Oxtoby                                                  0                       
+Pipkins                                                 0                       
+Trainor                                                 0                       
+Tranchin                                                0                       
+Turk                                                    0                       
+Valencia                                                0                       
+Vogel                                                   0                       
+Wade                                                    0                       
+Pulliam                                                 0                       
+Samuels, Jr.                                            0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Schuker                                                 0                       
+Smoot                                                   0                       
+Stickel                                                 0                       
+Stoev                                                   0                       
+Summers                                                 0                       
+Sweeney                                                 0                       
+Teehee                                                  0                       
+Albino                                                  0                       
+Aldy, Jr.                                               0                       
+Anderson                                                0                       
+Baldassaro                                              0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Beinart                                                 0                       
+Blake                                                   0                       
+Chambers                                                0                       
+Coven                                                   0                       
+Cuba                                                    0                       
+Cunningham                                              0                       
+DeGuzman                                                0                       
+DeRosa                                                  0                       
+Fenn                                                    0                       
+Finlen                                                  0                       
+Fiscus                                                  0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Fitts                                                   0                       
+Ford                                                    0                       
+Gage                                                    0                       
+Gray                                                    0                       
+Hanson                                                  0                       
+Harris                                                  0                       
+Hash                                                    0                       
+Jabbour                                                 0                       
+Jackson                                                 0                       
+Jarrett                                                 0                       
+Jarvis-Shean                                            0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Jean-Pierre                                             0                       
+Kalbaugh                                                0                       
+Kale                                                    0                       
+Kelly                                                   0                       
+Levine                                                  0                       
+Love                                                    0                       
+Maska                                                   0                       
+McGrath                                                 0                       
+Metcalf                                                 0                       
+Mrazek                                                  0                       
+Neralla                                                 0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Paige                                                   0                       
+Papa                                                    0                       
+Pfeiffer                                                0                       
+Phadke                                                  0                       
+Tennison                                                0                       
+Terrell                                                 0                       
+Tucker                                                  0                       
+Watkins                                                 0                       
+Webster                                                 0                       
+Young                                                   0                       
+Zelman                                                  0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Pourmorad                                               0                       
+Rivadeneira                                             0                       
+Robertson                                               0                       
+Rosalsky                                                0                       
+Sabochik                                                0                       
+Sanders                                                 0                       
+Schiliro                                                0                       
+Shah                                                    0                       
+Sheehy                                                  0                       
+Strautmanis                                             0                       
+Swire                                                   0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Bassin                                                  0                       
+Bressler                                                0                       
+Burman                                                  0                       
+Carden                                                  0                       
+De Sio, Jr.                                             0                       
+Douglas                                                 0                       
+DuBois                                                  0                       
+Dyer                                                    0                       
+Earnest                                                 0                       
+Firestone                                               0                       
+Garcia                                                  0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Gavin, Jr.                                              0                       
+Hennigan                                                0                       
+Hornsby                                                 0                       
+Hurley                                                  0                       
+Jamison                                                 0                       
+Kim                                                     0                       
+King                                                    0                       
+Kramer                                                  0                       
+Lee                                                     0                       
+Leger                                                   0                       
+Lepow                                                   0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Lorjuste                                                0                       
+Markovitz                                               0                       
+McBride                                                 0                       
+McNeal                                                  0                       
+Monteiro                                                0                       
+Nathan                                                  0                       
+Neiman                                                  0                       
+Ocampo                                                  0                       
+Offerman                                                0                       
+Olmos                                                   0                       
+Olson                                                   0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Ortiz                                                   0                       
+Pate                                                    0                       
+Thorbjornsen                                            0                       
+Tubman                                                  0                       
+Tucci                                                   0                       
+Vietor                                                  0                       
+Wang-Levine                                             0                       
+Witt                                                    0                       
+Rathod                                                  0                       
+Reeves                                                  0                       
+Santucci                                                0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Saunders                                                0                       
+Schaub                                                  0                       
+Sinha                                                   0                       
+Tate-Gilmore                                            0                       
+Abrams                                                  0                       
+Attili                                                  0                       
+Axelrod                                                 0                       
+Bernard                                                 0                       
+Beverly                                                 0                       
+Burton                                                  0                       
+Campoverdi                                              0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Camu??ez                                                0                       
+Castillo                                                0                       
+Chhabra                                                 0                       
+Conrad                                                  0                       
+Cusack                                                  0                       
+DeGuzman, Jr.                                           0                       
+DeParle                                                 0                       
+Donovan                                                 0                       
+Droege                                                  0                       
+Fernkas                                                 0                       
+Flatgard                                                0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Freeman                                                 0                       
+Godfrey                                                 0                       
+Goodman                                                 0                       
+Greenawalt                                              0                       
+Jarvis                                                  0                       
+Jones                                                   0                       
+Jung                                                    0                       
+Kocher                                                  0                       
+Kumar                                                   0                       
+Lechtenberg                                             0                       
+Ledbetter                                               0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Lesser                                                  0                       
+Lipton                                                  0                       
+McCathran                                               0                       
+Mehrbani                                                0                       
+Millison                                                0                       
+Moilanen                                                0                       
+Nabors                                                  0                       
+Nelson                                                  0                       
+Northern                                                0                       
+Thomas, III                                             0                       
+Verrilli                                                0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Walsh                                                   0                       
+Whichard, IV                                            0                       
+Winter                                                  0                       
+Roberts                                                 0                       
+Roddick                                                 0                       
+Rundlet                                                 0                       
+Setser                                                  0                       
+Smith                                                   0                       
+Sobel                                                   0                       
+Stoneman                                                0                       
+Stracko                                                 0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Taggart, Jr.                                            0                       
+Amorsingh                                               0                       
+Andrias                                                 0                       
+Baggetto                                                0                       
+Baskerville, Jr.                                        0                       
+Bisi                                                    0                       
+Block                                                   0                       
+Blount                                                  0                       
+Bookey-Baker                                            0                       
+Brooke                                                  0                       
+Burnough                                                0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Campbell                                                0                       
+Canery                                                  0                       
+Cushman                                                 0                       
+Dale                                                    0                       
+Fergenson                                               0                       
+Finkenbinder                                            0                       
+Furman                                                  0                       
+Gibbs                                                   0                       
+Gottlieb                                                0                       
+Hable                                                   0                       
+Higginbottom                                            0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Hitchcock                                               0                       
+Johnston                                                0                       
+Kang                                                    0                       
+Keenan                                                  0                       
+Kiley                                                   0                       
+Kohnke                                                  0                       
+Lehrich                                                 0                       
+Lipsky                                                  0                       
+Luck                                                    0                       
+Mack                                                    0                       
+Mastromonaco                                            0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Mayekar                                                 0                       
+McLaughlin                                              0                       
+Millett                                                 0                       
+Nguyen                                                  0                       
+Odintz                                                  0                       
+Perez                                                   0                       
+Tseggai                                                 0                       
+Utech                                                   0                       
+Vale                                                    0                       
+Vega                                                    0                       
+Weiser                                                  0                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Whitty                                                  0                       
+Williams                                                0                       
+Wilson                                                  0                       
+Wong                                                    0                       
+
+433 rows selected.
+
+SQL> exec setSalaries (50000,100000)
+
+PL/SQL procedure successfully completed.
+
+SQL> select * from AlphaCoEmp;
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Perez                                               91159                       
+Utech                                               64137                       
+Vega                                                60112                       
+Whitty                                              91365                       
+Wilson                                              87394                       
+Psaki                                               85217                       
+Reinstein                                           67373                       
+Roche                                               81291                       
+Rouse                                               79413                       
+Sathe                                               98136                       
+Schulman                                            88779                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Seymour                                             95628                       
+Shapiro                                             60797                       
+Shaw                                                68742                       
+Sher                                                51441                       
+Showers                                             62806                       
+Siegel                                              99925                       
+Sirbu                                               98182                       
+Stephens                                            71689                       
+Sutton                                              86638                       
+Adams                                               79786                       
+Alley                                               95235                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Anello                                              61903                       
+Barnes                                              64326                       
+Bates                                               93301                       
+Bedingfield                                         91778                       
+Chaifetz                                            78757                       
+Clarke                                              97201                       
+Cobbina                                             57766                       
+Crutchfield                                         52062                       
+Dalheim                                             82734                       
+Ealons                                              73526                       
+Escobar                                             95984                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Farrell                                             77259                       
+Gaspard                                             80267                       
+Groth                                               62156                       
+Heimbach                                            91486                       
+Jawando                                             60307                       
+Kennedy                                             92356                       
+Konwinski                                           91932                       
+Lewis                                               57814                       
+Liddell-Westefeld                                   88885                       
+Limon                                               63486                       
+Loeb                                                56160                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+London                                              59607                       
+Maher                                               72451                       
+Messina                                             66430                       
+Monje, Jr.                                          63415                       
+Newell                                              60277                       
+Nicholson, Jr.                                      85703                       
+Noel                                                93870                       
+Oleske                                              78186                       
+Page                                                89244                       
+Terry                                               70588                       
+Vanderslice                                         62247                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Wear                                                87771                       
+White                                               92497                       
+Yeager Kaplan                                       80371                       
+Young, Jr.                                          52787                       
+Quinn                                               63717                       
+Raizk                                               87279                       
+Reed                                                50106                       
+Ryan                                                54817                       
+Sahgal                                              75398                       
+Sass                                                75395                       
+Schafer                                             69046                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Schwartz                                            57784                       
+Sibley                                              52284                       
+Singiser                                            79049                       
+Starkey                                             93798                       
+Swanson                                             54738                       
+Tamarin                                             57739                       
+Tchen                                               87067                       
+Agnew                                               85176                       
+Bauer                                               92799                       
+Beliveau                                            89393                       
+Bhowmik                                             67686                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Brennan                                             78333                       
+Buffett                                             77741                       
+Carrier                                             53577                       
+Cherlin                                             77481                       
+Cizner                                              72627                       
+Cokley                                              75387                       
+Colvin                                              97011                       
+Cuellar                                             72650                       
+Cutter                                              94981                       
+Deese                                               61297                       
+Dillon                                              88481                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Donilon                                             57631                       
+Dorsett                                             83054                       
+Fernandez                                           75873                       
+Frank                                               78765                       
+Frankel                                             60413                       
+Frye                                                97173                       
+Gonzalez                                            67329                       
+Graham                                              83209                       
+Hoang                                               57932                       
+Hopkins                                             71270                       
+Inouye                                              58444                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Johnson                                             88656                       
+Kelleher, Jr.                                       66249                       
+Larus                                               71168                       
+Lynn                                                71154                       
+Mackey                                              97344                       
+McCarthy                                            70878                       
+McGinnis                                            86668                       
+McGuire                                             67579                       
+Mosteller                                           56931                       
+Mueller                                             98920                       
+Murtha                                              89988                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Onek                                                91349                       
+Papas                                               69978                       
+Parker                                              52998                       
+Paulsen                                             78174                       
+Phillips, III                                       60728                       
+Turton                                              59929                       
+Voorman                                             95087                       
+Watson                                              66114                       
+Wright                                              63879                       
+Pojman                                              83026                       
+Pope                                                52100                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Rodriguez                                           83657                       
+Sutphen                                             81049                       
+Asen                                                89462                       
+Belive                                              90971                       
+Browner                                             72067                       
+Brundage                                            90948                       
+Brush                                               94999                       
+Cardwell                                            56446                       
+Chen                                                51243                       
+Chiodo                                              78048                       
+Corrigan                                            83935                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Crowley                                             99500                       
+Davies                                              98895                       
+Devine                                              50921                       
+Edgerton                                            98359                       
+Edmonds                                             59295                       
+Eisen                                               92966                       
+Espinel                                             53942                       
+Favreau                                             71570                       
+Gardaphe                                            84969                       
+Gillette                                            52645                       
+Gomez                                               58459                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Gottry                                              60628                       
+Grant                                               61228                       
+Green                                               86601                       
+Harper                                              88694                       
+Hughes                                              55500                       
+Hurwitz                                             63287                       
+Juska                                               81208                       
+Kammerer                                            66235                       
+Kimball                                             60032                       
+Kommareddi                                          54927                       
+Kravis                                              89493                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+LaBolt                                              78118                       
+Lerner                                              57220                       
+Lewin                                               93235                       
+Lippert                                             62103                       
+Lovett                                              92343                       
+Martin                                              77324                       
+Massey                                              87911                       
+Mattson                                             95628                       
+McDonough                                           90866                       
+Milakofsky                                          98421                       
+Miranda                                             88883                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Mu??oz                                              92270                       
+Muntz                                               68337                       
+Odio                                                62293                       
+Thomas                                              71140                       
+Zichal                                              64670                       
+Portilla                                            81499                       
+Posey                                               80056                       
+Richardson                                          68759                       
+Rittner                                             72337                       
+Roach                                               93654                       
+Ruemmler                                            63328                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Samuels                                             70258                       
+Schmuck                                             69743                       
+Simas                                               94962                       
+Skoczek                                             54258                       
+Spencer                                             53275                       
+Ayling                                              57183                       
+Becnel                                              55031                       
+Binns                                               61372                       
+Birdsall                                            90735                       
+Bond                                                56166                       
+Branch                                              91155                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Brewer                                              92735                       
+Brown                                               60998                       
+Campos                                              93264                       
+Carter                                              75683                       
+Claude                                              97206                       
+Cohen                                               88594                       
+Davis                                               94808                       
+Dunn                                                69991                       
+Edwards                                             73852                       
+Emanuel                                             94915                       
+Faulman                                             76795                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Greene                                              72921                       
+Hegde                                               82368                       
+Hernandez                                           51271                       
+Hiatt                                               70193                       
+Hogan                                               85556                       
+Kochman                                             82046                       
+Koo                                                 53545                       
+Krass                                               59889                       
+Lartey                                              73361                       
+Leitner-Laserna                                     75184                       
+Lelyveld                                            59235                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Lezotte                                             73080                       
+Liegel                                              61477                       
+Lillie                                              96510                       
+Lu                                                  69286                       
+Naidoff                                             97374                       
+Narechania                                          88696                       
+Oxtoby                                              78646                       
+Pipkins                                             51794                       
+Trainor                                             82021                       
+Tranchin                                            91155                       
+Turk                                                99881                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Valencia                                            85534                       
+Vogel                                               94020                       
+Wade                                                59499                       
+Pulliam                                             59734                       
+Samuels, Jr.                                        59478                       
+Schuker                                             51490                       
+Smoot                                               53907                       
+Stickel                                             63675                       
+Stoev                                               99132                       
+Summers                                             66575                       
+Sweeney                                             95696                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Teehee                                              71528                       
+Albino                                              89935                       
+Aldy, Jr.                                           80518                       
+Anderson                                            86304                       
+Baldassaro                                          56820                       
+Beinart                                             67072                       
+Blake                                               78392                       
+Chambers                                            86557                       
+Coven                                               99971                       
+Cuba                                                79246                       
+Cunningham                                          52632                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+DeGuzman                                            89244                       
+DeRosa                                              80284                       
+Fenn                                                90638                       
+Finlen                                              64379                       
+Fiscus                                              75852                       
+Fitts                                               90387                       
+Ford                                                76829                       
+Gage                                                61146                       
+Gray                                                73733                       
+Hanson                                              80449                       
+Harris                                              70815                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Hash                                                82420                       
+Jabbour                                             92102                       
+Jackson                                             60749                       
+Jarrett                                             71682                       
+Jarvis-Shean                                        89463                       
+Jean-Pierre                                         95721                       
+Kalbaugh                                            52678                       
+Kale                                                76464                       
+Kelly                                               69057                       
+Levine                                              96713                       
+Love                                                99170                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Maska                                               53598                       
+McGrath                                             97781                       
+Metcalf                                             53330                       
+Mrazek                                              86357                       
+Neralla                                             75766                       
+Paige                                               75253                       
+Papa                                                78617                       
+Pfeiffer                                            81040                       
+Phadke                                              84653                       
+Tennison                                            80400                       
+Terrell                                             80165                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Tucker                                              76172                       
+Watkins                                             58399                       
+Webster                                             85351                       
+Young                                               50121                       
+Zelman                                              86307                       
+Pourmorad                                           62636                       
+Rivadeneira                                         77640                       
+Robertson                                           94124                       
+Rosalsky                                            69947                       
+Sabochik                                            98996                       
+Sanders                                             87798                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Schiliro                                            82277                       
+Shah                                                61617                       
+Sheehy                                              69981                       
+Strautmanis                                         82025                       
+Swire                                               59498                       
+Bassin                                              93536                       
+Bressler                                            97449                       
+Burman                                              83270                       
+Carden                                              99141                       
+De Sio, Jr.                                         82844                       
+Douglas                                             50414                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+DuBois                                              92574                       
+Dyer                                                66641                       
+Earnest                                             66404                       
+Firestone                                           89633                       
+Garcia                                              54469                       
+Gavin, Jr.                                          71427                       
+Hennigan                                            61483                       
+Hornsby                                             91546                       
+Hurley                                              53898                       
+Jamison                                             56622                       
+Kim                                                 79214                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+King                                                67772                       
+Kramer                                              92223                       
+Lee                                                 97056                       
+Leger                                               84318                       
+Lepow                                               67103                       
+Lorjuste                                            89845                       
+Markovitz                                           72625                       
+McBride                                             75460                       
+McNeal                                              56855                       
+Monteiro                                            78990                       
+Nathan                                              60788                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Neiman                                              73579                       
+Ocampo                                              79806                       
+Offerman                                            62828                       
+Olmos                                               79893                       
+Olson                                               73214                       
+Ortiz                                               58523                       
+Pate                                                77758                       
+Thorbjornsen                                        63884                       
+Tubman                                              85067                       
+Tucci                                               72974                       
+Vietor                                              96806                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Wang-Levine                                         92576                       
+Witt                                                98032                       
+Rathod                                              89821                       
+Reeves                                              71548                       
+Santucci                                            97790                       
+Saunders                                            54182                       
+Schaub                                              81537                       
+Sinha                                               50746                       
+Tate-Gilmore                                        99162                       
+Abrams                                              66767                       
+Attili                                              80020                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Axelrod                                             79333                       
+Bernard                                             95935                       
+Beverly                                             87084                       
+Burton                                              71870                       
+Campoverdi                                          82123                       
+Camu??ez                                            68996                       
+Castillo                                            54303                       
+Chhabra                                             62259                       
+Conrad                                              59929                       
+Cusack                                              56423                       
+DeGuzman, Jr.                                       80220                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+DeParle                                             55402                       
+Donovan                                             96534                       
+Droege                                              89619                       
+Fernkas                                             98156                       
+Flatgard                                            82227                       
+Freeman                                             85311                       
+Godfrey                                             96550                       
+Goodman                                             64521                       
+Greenawalt                                          50704                       
+Jarvis                                              99198                       
+Jones                                               77246                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Jung                                                57592                       
+Kocher                                              63771                       
+Kumar                                               94846                       
+Lechtenberg                                         88501                       
+Ledbetter                                           98640                       
+Lesser                                              90591                       
+Lipton                                              71786                       
+McCathran                                           92227                       
+Mehrbani                                            86875                       
+Millison                                            58323                       
+Moilanen                                            56723                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Nabors                                              60663                       
+Nelson                                              51677                       
+Northern                                            94950                       
+Thomas, III                                         98889                       
+Verrilli                                            77518                       
+Walsh                                               70782                       
+Whichard, IV                                        87686                       
+Winter                                              70307                       
+Roberts                                             65287                       
+Roddick                                             78377                       
+Rundlet                                             93341                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Setser                                              82195                       
+Smith                                               96188                       
+Sobel                                               72048                       
+Stoneman                                            56859                       
+Stracko                                             94340                       
+Taggart, Jr.                                        68703                       
+Amorsingh                                           82241                       
+Andrias                                             99944                       
+Baggetto                                            76408                       
+Baskerville, Jr.                                    74360                       
+Bisi                                                93791                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Block                                               74179                       
+Blount                                              84436                       
+Bookey-Baker                                        85724                       
+Brooke                                              62461                       
+Burnough                                            53909                       
+Campbell                                            61223                       
+Canery                                              91179                       
+Cushman                                             70582                       
+Dale                                                66652                       
+Fergenson                                           67087                       
+Finkenbinder                                        81897                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Furman                                              50353                       
+Gibbs                                               95423                       
+Gottlieb                                            67137                       
+Hable                                               68938                       
+Higginbottom                                        69914                       
+Hitchcock                                           55618                       
+Johnston                                            61837                       
+Kang                                                92897                       
+Keenan                                              94044                       
+Kiley                                               81393                       
+Kohnke                                              73434                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Lehrich                                             79640                       
+Lipsky                                              70629                       
+Luck                                                89186                       
+Mack                                                57204                       
+Mastromonaco                                        80882                       
+Mayekar                                             90534                       
+McLaughlin                                          98194                       
+Millett                                             66587                       
+Nguyen                                              80666                       
+Odintz                                              82502                       
+Tseggai                                             96388                       
+
+NAME                      TITLE                    SALARY                       
+------------------------- -------------------- ----------                       
+Vale                                                98860                       
+Weiser                                              68697                       
+Williams                                            54338                       
+Wong                                                97183                       
+
+433 rows selected.
+
+SQL> Select name from AlphaCoEmp where salary IN
+  2  (Select salary from AlphaCoEmp
+  3  where salary >= 80000);
+
+NAME                                                                            
+-------------------------                                                       
+Perez                                                                           
+Whitty                                                                          
+Wilson                                                                          
+Psaki                                                                           
+Roche                                                                           
+Sathe                                                                           
+Schulman                                                                        
+Mattson                                                                         
+Seymour                                                                         
+Siegel                                                                          
+Sirbu                                                                           
+
+NAME                                                                            
+-------------------------                                                       
+Sutton                                                                          
+Alley                                                                           
+Bates                                                                           
+Bedingfield                                                                     
+Clarke                                                                          
+Dalheim                                                                         
+Escobar                                                                         
+Gaspard                                                                         
+Heimbach                                                                        
+Kennedy                                                                         
+Konwinski                                                                       
+
+NAME                                                                            
+-------------------------                                                       
+Liddell-Westefeld                                                               
+Nicholson, Jr.                                                                  
+Noel                                                                            
+DeGuzman                                                                        
+Page                                                                            
+Wear                                                                            
+White                                                                           
+Yeager Kaplan                                                                   
+Raizk                                                                           
+Starkey                                                                         
+Tchen                                                                           
+
+NAME                                                                            
+-------------------------                                                       
+Agnew                                                                           
+Bauer                                                                           
+Beliveau                                                                        
+Colvin                                                                          
+Cutter                                                                          
+Dillon                                                                          
+Dorsett                                                                         
+Frye                                                                            
+Graham                                                                          
+Johnson                                                                         
+Mackey                                                                          
+
+NAME                                                                            
+-------------------------                                                       
+McGinnis                                                                        
+Mueller                                                                         
+Murtha                                                                          
+Onek                                                                            
+Voorman                                                                         
+Pojman                                                                          
+Rodriguez                                                                       
+Sutphen                                                                         
+Asen                                                                            
+Belive                                                                          
+Brundage                                                                        
+
+NAME                                                                            
+-------------------------                                                       
+Brush                                                                           
+Corrigan                                                                        
+Crowley                                                                         
+Davies                                                                          
+Edgerton                                                                        
+Eisen                                                                           
+Gardaphe                                                                        
+Green                                                                           
+Harper                                                                          
+Juska                                                                           
+Kravis                                                                          
+
+NAME                                                                            
+-------------------------                                                       
+Lewin                                                                           
+Lovett                                                                          
+Massey                                                                          
+McDonough                                                                       
+Milakofsky                                                                      
+Miranda                                                                         
+Mu??oz                                                                          
+Portilla                                                                        
+Posey                                                                           
+Roach                                                                           
+Simas                                                                           
+
+NAME                                                                            
+-------------------------                                                       
+Birdsall                                                                        
+Tranchin                                                                        
+Branch                                                                          
+Brewer                                                                          
+Campos                                                                          
+Claude                                                                          
+Cohen                                                                           
+Davis                                                                           
+Emanuel                                                                         
+Hegde                                                                           
+Hogan                                                                           
+
+NAME                                                                            
+-------------------------                                                       
+Kochman                                                                         
+Lillie                                                                          
+Naidoff                                                                         
+Narechania                                                                      
+Trainor                                                                         
+Turk                                                                            
+Valencia                                                                        
+Vogel                                                                           
+Stoev                                                                           
+Sweeney                                                                         
+Albino                                                                          
+
+NAME                                                                            
+-------------------------                                                       
+Aldy, Jr.                                                                       
+Anderson                                                                        
+Chambers                                                                        
+Coven                                                                           
+DeRosa                                                                          
+Fenn                                                                            
+Fitts                                                                           
+Hanson                                                                          
+Hash                                                                            
+Jabbour                                                                         
+Jarvis-Shean                                                                    
+
+NAME                                                                            
+-------------------------                                                       
+Jean-Pierre                                                                     
+Levine                                                                          
+Love                                                                            
+McGrath                                                                         
+Mrazek                                                                          
+Pfeiffer                                                                        
+Phadke                                                                          
+Tennison                                                                        
+Terrell                                                                         
+Webster                                                                         
+Zelman                                                                          
+
+NAME                                                                            
+-------------------------                                                       
+Robertson                                                                       
+Sabochik                                                                        
+Sanders                                                                         
+Schiliro                                                                        
+Strautmanis                                                                     
+Bassin                                                                          
+Bressler                                                                        
+Burman                                                                          
+Carden                                                                          
+De Sio, Jr.                                                                     
+DuBois                                                                          
+
+NAME                                                                            
+-------------------------                                                       
+Firestone                                                                       
+Hornsby                                                                         
+Kramer                                                                          
+Lee                                                                             
+Leger                                                                           
+Lorjuste                                                                        
+Tubman                                                                          
+Vietor                                                                          
+Wang-Levine                                                                     
+Witt                                                                            
+Rathod                                                                          
+
+NAME                                                                            
+-------------------------                                                       
+Santucci                                                                        
+Schaub                                                                          
+Tate-Gilmore                                                                    
+Attili                                                                          
+Bernard                                                                         
+Beverly                                                                         
+Campoverdi                                                                      
+DeGuzman, Jr.                                                                   
+Donovan                                                                         
+Droege                                                                          
+Fernkas                                                                         
+
+NAME                                                                            
+-------------------------                                                       
+Flatgard                                                                        
+Freeman                                                                         
+Godfrey                                                                         
+Jarvis                                                                          
+Kumar                                                                           
+Lechtenberg                                                                     
+Ledbetter                                                                       
+Lesser                                                                          
+McCathran                                                                       
+Mehrbani                                                                        
+Northern                                                                        
+
+NAME                                                                            
+-------------------------                                                       
+Thomas, III                                                                     
+Whichard, IV                                                                    
+Rundlet                                                                         
+Setser                                                                          
+Smith                                                                           
+Stracko                                                                         
+Amorsingh                                                                       
+Andrias                                                                         
+Bisi                                                                            
+Blount                                                                          
+Bookey-Baker                                                                    
+
+NAME                                                                            
+-------------------------                                                       
+Canery                                                                          
+Finkenbinder                                                                    
+Gibbs                                                                           
+Kang                                                                            
+Keenan                                                                          
+Kiley                                                                           
+Luck                                                                            
+Mastromonaco                                                                    
+Mayekar                                                                         
+McLaughlin                                                                      
+Nguyen                                                                          
+
+NAME                                                                            
+-------------------------                                                       
+Odintz                                                                          
+Tseggai                                                                         
+Vale                                                                            
+Wong                                                                            
+
+191 rows selected.
+
+SQL> Select name, salary from AlphaCoEmp where salary IN
+  2  (Select salary from AlphaCoEmp
+  3  where salary >= 80000);
+
+NAME                          SALARY                                            
+------------------------- ----------                                            
+Perez                          91159                                            
+Whitty                         91365                                            
+Wilson                         87394                                            
+Psaki                          85217                                            
+Roche                          81291                                            
+Sathe                          98136                                            
+Schulman                       88779                                            
+Mattson                        95628                                            
+Seymour                        95628                                            
+Siegel                         99925                                            
+Sirbu                          98182                                            
+
+NAME                          SALARY                                            
+------------------------- ----------                                            
+Sutton                         86638                                            
+Alley                          95235                                            
+Bates                          93301                                            
+Bedingfield                    91778                                            
+Clarke                         97201                                            
+Dalheim                        82734                                            
+Escobar                        95984                                            
+Gaspard                        80267                                            
+Heimbach                       91486                                            
+Kennedy                        92356                                            
+Konwinski                      91932                                            
+
+NAME                          SALARY                                            
+------------------------- ----------                                            
+Liddell-Westefeld              88885                                            
+Nicholson, Jr.                 85703                                            
+Noel                           93870                                            
+DeGuzman                       89244                                            
+Page                           89244                                            
+Wear                           87771                                            
+White                          92497                                            
+Yeager Kaplan                  80371                                            
+Raizk                          87279                                            
+Starkey                        93798                                            
+Tchen                          87067                                            
+
+NAME                          SALARY                                            
+------------------------- ----------                                            
+Agnew                          85176                                            
+Bauer                          92799                                            
+Beliveau                       89393                                            
+Colvin                         97011                                            
+Cutter                         94981                                            
+Dillon                         88481                                            
+Dorsett                        83054                                            
+Frye                           97173                                            
+Graham                         83209                                            
+Johnson                        88656                                            
+Mackey                         97344                                            
+
+NAME                          SALARY                                            
+------------------------- ----------                                            
+McGinnis                       86668                                            
+Mueller                        98920                                            
+Murtha                         89988                                            
+Onek                           91349                                            
+Voorman                        95087                                            
+Pojman                         83026                                            
+Rodriguez                      83657                                            
+Sutphen                        81049                                            
+Asen                           89462                                            
+Belive                         90971                                            
+Brundage                       90948                                            
+
+NAME                          SALARY                                            
+------------------------- ----------                                            
+Brush                          94999                                            
+Corrigan                       83935                                            
+Crowley                        99500                                            
+Davies                         98895                                            
+Edgerton                       98359                                            
+Eisen                          92966                                            
+Gardaphe                       84969                                            
+Green                          86601                                            
+Harper                         88694                                            
+Juska                          81208                                            
+Kravis                         89493                                            
+
+NAME                          SALARY                                            
+------------------------- ----------                                            
+Lewin                          93235                                            
+Lovett                         92343                                            
+Massey                         87911                                            
+McDonough                      90866                                            
+Milakofsky                     98421                                            
+Miranda                        88883                                            
+Mu??oz                         92270                                            
+Portilla                       81499                                            
+Posey                          80056                                            
+Roach                          93654                                            
+Simas                          94962                                            
+
+NAME                          SALARY                                            
+------------------------- ----------                                            
+Birdsall                       90735                                            
+Tranchin                       91155                                            
+Branch                         91155                                            
+Brewer                         92735                                            
+Campos                         93264                                            
+Claude                         97206                                            
+Cohen                          88594                                            
+Davis                          94808                                            
+Emanuel                        94915                                            
+Hegde                          82368                                            
+Hogan                          85556                                            
+
+NAME                          SALARY                                            
+------------------------- ----------                                            
+Kochman                        82046                                            
+Lillie                         96510                                            
+Naidoff                        97374                                            
+Narechania                     88696                                            
+Trainor                        82021                                            
+Turk                           99881                                            
+Valencia                       85534                                            
+Vogel                          94020                                            
+Stoev                          99132                                            
+Sweeney                        95696                                            
+Albino                         89935                                            
+
+NAME                          SALARY                                            
+------------------------- ----------                                            
+Aldy, Jr.                      80518                                            
+Anderson                       86304                                            
+Chambers                       86557                                            
+Coven                          99971                                            
+DeRosa                         80284                                            
+Fenn                           90638                                            
+Fitts                          90387                                            
+Hanson                         80449                                            
+Hash                           82420                                            
+Jabbour                        92102                                            
+Jarvis-Shean                   89463                                            
+
+NAME                          SALARY                                            
+------------------------- ----------                                            
+Jean-Pierre                    95721                                            
+Levine                         96713                                            
+Love                           99170                                            
+McGrath                        97781                                            
+Mrazek                         86357                                            
+Pfeiffer                       81040                                            
+Phadke                         84653                                            
+Tennison                       80400                                            
+Terrell                        80165                                            
+Webster                        85351                                            
+Zelman                         86307                                            
+
+NAME                          SALARY                                            
+------------------------- ----------                                            
+Robertson                      94124                                            
+Sabochik                       98996                                            
+Sanders                        87798                                            
+Schiliro                       82277                                            
+Strautmanis                    82025                                            
+Bassin                         93536                                            
+Bressler                       97449                                            
+Burman                         83270                                            
+Carden                         99141                                            
+De Sio, Jr.                    82844                                            
+DuBois                         92574                                            
+
+NAME                          SALARY                                            
+------------------------- ----------                                            
+Firestone                      89633                                            
+Hornsby                        91546                                            
+Kramer                         92223                                            
+Lee                            97056                                            
+Leger                          84318                                            
+Lorjuste                       89845                                            
+Tubman                         85067                                            
+Vietor                         96806                                            
+Wang-Levine                    92576                                            
+Witt                           98032                                            
+Rathod                         89821                                            
+
+NAME                          SALARY                                            
+------------------------- ----------                                            
+Santucci                       97790                                            
+Schaub                         81537                                            
+Tate-Gilmore                   99162                                            
+Attili                         80020                                            
+Bernard                        95935                                            
+Beverly                        87084                                            
+Campoverdi                     82123                                            
+DeGuzman, Jr.                  80220                                            
+Donovan                        96534                                            
+Droege                         89619                                            
+Fernkas                        98156                                            
+
+NAME                          SALARY                                            
+------------------------- ----------                                            
+Flatgard                       82227                                            
+Freeman                        85311                                            
+Godfrey                        96550                                            
+Jarvis                         99198                                            
+Kumar                          94846                                            
+Lechtenberg                    88501                                            
+Ledbetter                      98640                                            
+Lesser                         90591                                            
+McCathran                      92227                                            
+Mehrbani                       86875                                            
+Northern                       94950                                            
+
+NAME                          SALARY                                            
+------------------------- ----------                                            
+Thomas, III                    98889                                            
+Whichard, IV                   87686                                            
+Rundlet                        93341                                            
+Setser                         82195                                            
+Smith                          96188                                            
+Stracko                        94340                                            
+Amorsingh                      82241                                            
+Andrias                        99944                                            
+Bisi                           93791                                            
+Blount                         84436                                            
+Bookey-Baker                   85724                                            
+
+NAME                          SALARY                                            
+------------------------- ----------                                            
+Canery                         91179                                            
+Finkenbinder                   81897                                            
+Gibbs                          95423                                            
+Kang                           92897                                            
+Keenan                         94044                                            
+Kiley                          81393                                            
+Luck                           89186                                            
+Mastromonaco                   80882                                            
+Mayekar                        90534                                            
+McLaughlin                     98194                                            
+Nguyen                         80666                                            
+
+NAME                          SALARY                                            
+------------------------- ----------                                            
+Odintz                         82502                                            
+Tseggai                        96388                                            
+Vale                           98860                                            
+Wong                           97183                                            
+
+191 rows selected.
+
+SQL> Create or Replace Procedure setEmpSalary(p_name in VARCHAR,
+  2  low in INTEGER, high in INTEGER) As
+  3  Cursor Emp_cur IS
+  4          Select * from AlphaCoEmp where name = p.name;
+  5          --Local variables
+  6          l_emprec Emp_cur%rowtype;
+  7          l_salary AlphaCoEmp.salary%type;
+  8  BEGIN
+  9          for l_emprec IN Emp_cur
+ 10          loop
+ 11                  l_salary := ROUND(dbms_random.value(low,high));
+ 12                  update AlphaCoEmp
+ 13                  set salary = l_salary
+ 14                  where name = l_emprec.name;
+ 15          END LOOP;
+ 16          commit;
+ 17  END;
+ 18  /show errors;
+ 19  
+ 20  
+ 21  ;
+ 22  
+ 23  
+ 24  
+ 25  ;
+ 26  

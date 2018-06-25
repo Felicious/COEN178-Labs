@@ -1,0 +1,56 @@
+Create table Customer(
+custid varchar(5) primary key,
+firstname varchar(10), 
+lastname varchar(15),
+city varchar(10));
+
+Create Table DeliveryService(
+serviceid varchar(10) primary key,
+item char(15),
+location varchar(15),
+servicefee decimal(5,2));
+
+Create Table Schedule(
+serviceid varchar(10),
+custid varchar(5),
+day varchar(2) NOT NULL,
+Check (day in ('m', 't', 'w', 'r', 'f')),
+Foreign key (serviceid) references DeliveryService(serviceid),
+Foreign key (custid) references Customer(custid)
+);
+
+Insert into Customer values ('c1', 'John', 'Smith', 'SJ');
+Insert into Customer values('c2', 'Mary', 'Jones', 'SFO');
+Insert into Customer values('a1', 'Vincent', 'Chen', 'SJ');
+Insert into Customer values('a12', 'Greg', 'King', 'SJ');
+Insert into Customer values('c7', 'James', 'Bond', 'LA');
+Insert into Customer values('x10', 'Susan', 'Blogg', 'SFO');
+Insert into Customer values('z4', 'Tiffany', 'Redd', 'Fremont');
+Insert into Customer values('r4', 'Mifa', 'Marina', 'Milpitas');
+
+Insert into DeliveryService values('dsg1','grocery','SJ', 25.0);
+Insert into DeliveryService values('dsb1','books','SJ',10.0);
+Insert into DeliveryService values('dsm2','movies','LA',10.0);
+Insert into DeliveryService values('dby3','babygoods','SFO',15.0);
+Insert into DeliveryService values('dsg2','grocery','SFO',20.0);
+Insert into DeliveryService values('dg5','greengoods','SFO',30.0);
+Insert into DeliveryService values('dg4', 'lionfoods', 'SJ', 15.5);
+Insert into DeliveryService values('dso6', 'oceanfoods', 'Milpitas', 12.0);
+
+Insert into Schedule values('dsg1','c1','m');
+Insert into Schedule values('dsg1','a12','w');
+Insert into Schedule values('dby3','x10','f');
+Insert into Schedule values('dg5','c1','r');
+Insert into Schedule values('dg5','c1','t');
+Insert into Schedule values('dg5','c32','t');
+
+Part 1 
+a) Did you successfully insert all the above tuples? If not, explain the reason for error. 
+ Could not add dg5','c32','t' into Schedule because serviceid, 'dg5', is a primary key of the table DeliveryService, and there cannot be duplicates. Thus, sql did not allow me to add that tuple.
+
+b)Did you successfully insert all the above tuples? If not, explain the reason for error.
+'dsg2','c1','s' could not be added because 's' violated the check constraint of the day in the table Schedule. To represent the days of the week, only m, t, w, r, and f, are allowed, and since s is not one of those letters, the tuple could not have been added.
+
+
+
+

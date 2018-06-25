@@ -1,0 +1,438 @@
+SQL> @/DCNFS/users/student/fkuan/data.sql
+Create table Customer(
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+Create Table DeliveryService(
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+Foreign key (serviced) references DeliveryService(serviceid),
+             *
+ERROR at line 5:
+ORA-00904: "SERVICED": invalid identifier 
+
+
+SQL> drop table Customer;
+drop table Customer
+           *
+ERROR at line 1:
+ORA-02449: unique/primary keys in table referenced by foreign keys 
+
+
+SQL> drop table Schedule;
+
+Table dropped.
+
+SQL> drop table customer;
+
+Table dropped.
+
+SQL> drop table deliveryservice;
+
+Table dropped.
+
+SQL> @/DCNFS/users/student/fkuan/data.sql
+
+Table created.
+
+
+Table created.
+
+Foreign key (serviced) references DeliveryService(serviceid),
+             *
+ERROR at line 5:
+ORA-00904: "SERVICED": invalid identifier 
+
+
+SQL> @/DCNFS/users/student/fkuan/data.sql
+Create table Customer(
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+Create Table DeliveryService(
+             *
+ERROR at line 1:
+ORA-00955: name is already used by an existing object 
+
+
+
+Table created.
+
+SQL> @/DCNFS/users/student/fkuan/data2.sql
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+
+1 row created.
+
+Insert into Schedule values('dg5','c32','t')
+*
+ERROR at line 1:
+ORA-02291: integrity constraint (FKUAN.SYS_C00629748) violated - parent key not 
+found 
+
+
+SQL> insert into Schedule values('dsg2','c1','s');
+insert into Schedule values('dsg2','c1','s')
+*
+ERROR at line 1:
+ORA-02290: check constraint (FKUAN.SYS_C00629746) violated 
+
+
+SQL> Select custid, firstname ||' '|| lastname as fullname, city from Customer;
+
+CUSTI FULLNAME                   CITY                                           
+----- -------------------------- ----------                                     
+c1    John Smith                 SJ                                             
+c2    Mary Jones                 SFO                                            
+a1    Vincent Chen               SJ                                             
+a12   Greg King                  SJ                                             
+c7    James Bond                 LA                                             
+x10   Susan Blogg                SFO                                            
+z4    Tiffany Redd               Fremont                                        
+r4    Mifa Marina                Milpitas                                       
+
+8 rows selected.
+
+SQL> Select * from Customer order by lastname;
+
+CUSTI FIRSTNAME  LASTNAME        CITY                                           
+----- ---------- --------------- ----------                                     
+x10   Susan      Blogg           SFO                                            
+c7    James      Bond            LA                                             
+a1    Vincent    Chen            SJ                                             
+c2    Mary       Jones           SFO                                            
+a12   Greg       King            SJ                                             
+r4    Mifa       Marina          Milpitas                                       
+z4    Tiffany    Redd            Fremont                                        
+c1    John       Smith           SJ                                             
+
+8 rows selected.
+
+SQL> Select * from Schedule order by serviceid, custid, desc;
+Select * from Schedule order by serviceid, custid, desc
+                                                   *
+ERROR at line 1:
+ORA-00936: missing expression 
+
+
+SQL> Select * from Schedule order by serviceid, custid desc;
+
+SERVICEID  CUSTI DA                                                             
+---------- ----- --                                                             
+dby3       x10   f                                                              
+dg5        c1    t                                                              
+dg5        c1    r                                                              
+dsg1       c1    m                                                              
+dsg1       a12   w                                                              
+
+SQL> Select * from Schedule order by serviceid desc, custid desc;
+
+SERVICEID  CUSTI DA                                                             
+---------- ----- --                                                             
+dsg1       c1    m                                                              
+dsg1       a12   w                                                              
+dg5        c1    t                                                              
+dg5        c1    r                                                              
+dby3       x10   f                                                              
+
+SQL> Select distinct serviceid from DeliveryService where serviceid not in (select serviceid from Schedule);
+
+SERVICEID                                                                       
+----------                                                                      
+dg4                                                                             
+dsg2                                                                            
+dsm2                                                                            
+dsb1                                                                            
+dso6                                                                            
+
+SQL> Select name from customer, schedule where day = 'M';
+Select name from customer, schedule where day = 'M'
+       *
+ERROR at line 1:
+ORA-00904: "NAME": invalid identifier 
+
+
+SQL> Select fullname from customer, schedule where day = 'm';
+Select fullname from customer, schedule where day = 'm'
+       *
+ERROR at line 1:
+ORA-00904: "FULLNAME": invalid identifier 
+
+
+SQL> Select firstname from customer, schedule where day = 'm';
+
+FIRSTNAME                                                                       
+----------                                                                      
+John                                                                            
+Mary                                                                            
+Vincent                                                                         
+Greg                                                                            
+James                                                                           
+Susan                                                                           
+Tiffany                                                                         
+Mifa                                                                            
+
+8 rows selected.
+
+SQL> Select firstname, lastname from customer left join customer, schedule on day = 'm';
+Select firstname, lastname from customer left join customer, schedule on day = 'm'
+                                                           *
+ERROR at line 1:
+ORA-00905: missing keyword 
+
+
+SQL> Select firstname, lastname from customer inner join customer on schedule where day = 'm';
+Select firstname, lastname from customer inner join customer on schedule where day = 'm'
+                                                                         *
+ERROR at line 1:
+ORA-00920: invalid relational operator 
+
+
+SQL> Select firstname, lastname from customer left join customer on schedule where day = 'm';
+Select firstname, lastname from customer left join customer on schedule where day = 'm'
+                                                                        *
+ERROR at line 1:
+ORA-00920: invalid relational operator 
+
+
+SQL> Select firstname, lastname from customer inner join Schedule on Customer.custid=Schedule.custid where day = 'm';
+
+FIRSTNAME  LASTNAME                                                             
+---------- ---------------                                                      
+John       Smith                                                                
+
+SQL> Select lastname from Customer where Schedule.custid = Customer.custid;
+Select lastname from Customer where Schedule.custid = Customer.custid
+                                    *
+ERROR at line 1:
+ORA-00904: "SCHEDULE"."CUSTID": invalid identifier 
+
+
+SQL> Select lastname from Customer Inner Join Schedule on Schedule.custid = Customer.custid;
+
+LASTNAME                                                                        
+---------------                                                                 
+Smith                                                                           
+Smith                                                                           
+Smith                                                                           
+King                                                                            
+Blogg                                                                           
+
+SQL> Select distinct lastname from Customer Inner Join Schedule on Schedule.custid = Customer.custid;
+
+LASTNAME                                                                        
+---------------                                                                 
+King                                                                            
+Blogg                                                                           
+Smith                                                                           
+
+SQL> Select max(servicefee) as highest_Servicefee from DeliveryServices;
+Select max(servicefee) as highest_Servicefee from DeliveryServices
+                                                  *
+ERROR at line 1:
+ORA-00942: table or view does not exist 
+
+
+SQL> Select max(servicefee) as highest_Servicefee from DeliveryService;
+
+HIGHEST_SERVICEFEE                                                              
+------------------                                                              
+                30                                                              
+
+SQL> Select Count(custid) from Schedule group by (day);
+
+COUNT(CUSTID)                                                                   
+-------------                                                                   
+            1                                                                   
+            1                                                                   
+            1                                                                   
+            1                                                                   
+            1                                                                   
+
+SQL>                                                           Select A.custid, A.city from Customer A, Customer B where A.custid <> B.custid and A.city=B.city;
+
+CUSTI CITY                                                                      
+----- ----------                                                                
+a12   SJ                                                                        
+a1    SJ                                                                        
+x10   SFO                                                                       
+a12   SJ                                                                        
+c1    SJ                                                                        
+a1    SJ                                                                        
+c1    SJ                                                                        
+c2    SFO                                                                       
+
+8 rows selected.
+
+SQL> Select A.custid, A.city from Customer A, Customer B where A.custid < B.custid and A.city=B.city;
+
+CUSTI CITY                                                                      
+----- ----------                                                                
+a12   SJ                                                                        
+a1    SJ                                                                        
+a1    SJ                                                                        
+c2    SFO                                                                       
+
+SQL> Select distinct A.custid, A.city from Customer A, Customer B where A.custid < B.custid and A.city=B.city;
+
+CUSTI CITY                                                                      
+----- ----------                                                                
+a1    SJ                                                                        
+a12   SJ                                                                        
+c2    SFO                                                                       
+
+SQL> Select A.custid, B.custid, A.city from Customer A, Customer B where A.custid < B.custid and A.city=B.city;
+
+CUSTI CUSTI CITY                                                                
+----- ----- ----------                                                          
+a12   c1    SJ                                                                  
+a1    c1    SJ                                                                  
+a1    a12   SJ                                                                  
+c2    x10   SFO                                                                 
+
+SQL> Select firstname, lastname from Customer inner join DeliveryService on DeliveryService.location = Customer.city;
+
+FIRSTNAME  LASTNAME                                                             
+---------- ---------------                                                      
+Greg       King                                                                 
+Vincent    Chen                                                                 
+John       Smith                                                                
+Greg       King                                                                 
+Vincent    Chen                                                                 
+John       Smith                                                                
+James      Bond                                                                 
+Susan      Blogg                                                                
+Mary       Jones                                                                
+Susan      Blogg                                                                
+Mary       Jones                                                                
+
+FIRSTNAME  LASTNAME                                                             
+---------- ---------------                                                      
+Susan      Blogg                                                                
+Mary       Jones                                                                
+Greg       King                                                                 
+Vincent    Chen                                                                 
+John       Smith                                                                
+Mifa       Marina                                                               
+
+17 rows selected.
+
+SQL> Select firstname ||' '|| lastname as fullname from Customer inner join DeliveryService on DeliveryService.location = Customer.city;
+
+FULLNAME                                                                        
+--------------------------                                                      
+Greg King                                                                       
+Vincent Chen                                                                    
+John Smith                                                                      
+Greg King                                                                       
+Vincent Chen                                                                    
+John Smith                                                                      
+James Bond                                                                      
+Susan Blogg                                                                     
+Mary Jones                                                                      
+Susan Blogg                                                                     
+Mary Jones                                                                      
+
+FULLNAME                                                                        
+--------------------------                                                      
+Susan Blogg                                                                     
+Mary Jones                                                                      
+Greg King                                                                       
+Vincent Chen                                                                    
+John Smith                                                                      
+Mifa Marina                                                                     
+
+17 rows selected.
+
+SQL> Select distinct firstname, lastname from Customer inner join DeliveryService on DeliveryService.location = Customer.city;
+
+FIRSTNAME  LASTNAME                                                             
+---------- ---------------                                                      
+James      Bond                                                                 
+Greg       King                                                                 
+Mifa       Marina                                                               
+Vincent    Chen                                                                 
+John       Smith                                                                
+Susan      Blogg                                                                
+Mary       Jones                                                                
+
+7 rows selected.
+
+SQL> Select min(salary), max(salary) from staff_2010;
+
+MIN(SALARY) MAX(SALARY)                                                         
+----------- -----------                                                         
+          0      179700                                                         
+
+SQL> Select min(salary) as minimum, max(salary) as maximum from staff_2010;
+
+   MINIMUM    MAXIMUM                                                           
+---------- ----------                                                           
+         0     179700                                                           
+
+SQL> spool off

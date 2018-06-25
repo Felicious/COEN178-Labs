@@ -1,0 +1,52 @@
+Answers to Questions 
+
+Exercise 1
+Did your trigger work? 
+Yes and I modified it to display the city upon insertion as well 
+
+Exercise 2
+Did your trigger work? How did you check?
+The trigger did not work at first because the rows I was trying to insert were
+violating integrity constraints. This was because while I was inserting values
+into Bankcust_6 previously, the first row with custno 'c1' didn't get added for
+some reason. After I added that to the referenced table for Accounts_6, the 
+trigger could successfully activate when I inserted the correct row. 
+
+Now the trigger worked. I checked by looking at the what is displayed in the
+Totals_6 table, which contains:
+CUSTN TOTALAMOUNT
+----- -----------
+c2           9000
+c33           500
+c1           7000
+c20           150
+
+'c1' has the amount 7000,and agrees with the amounts in the Accounts_6 table
+
+
+Exercise 3
+What is the amount for the customer, ‘c1’? 
+It is 7000.
+
+Does the amount in Totals_6 table for ‘c1’ agree with the total of amounts in all the accounts for ‘c1’ in Accounts_6 table?
+
+No, because as shown in Accounts_6:
+ACCOU ACCOUNTTYP     AMOUNT CUSTN
+----- ---------- ---------- -----
+a4378 checking	       1000 c2
+a5363 saving	       8000 c2
+a7236 checking		500 c33
+a1523 checking	       1000 c1
+a2134 saving	       5000 c1
+a8577 checking		150 c20
+
+c1 should display 6000 in Totals_6, but it doesn't.
+
+Exercise 4
+The amount for customer 'c1' is 6000 and agrees with the total amounts from
+the Accounts_6 table.
+
+Exercise 5
+The trigger did not allow me to update the primary key because it was written 
+to do so. 
+ 

@@ -1,0 +1,41 @@
+Part 1
+
+Exercise 1
+Question: Did you succeed? What did you see?
+No, I got this errort message:
+Usage: SHOW ERRORS [{ FUNCTION | PROCEDURE | PACKAGE |
+   PACKAGE BODY | TRIGGER | VIEW
+   | TYPE | TYPE BODY | DIMENSION
+   | JAVA SOURCE | JAVA CLASS } [schema.]name]
+According to the lab instructions, the solution to the above problem is to not include the query in the trigger.
+
+Exercise 2
+Why do you think the prerequisites are in a separate tables and not included in the Course table?
+
+It is to save memory space. There are some coursese that do not have prerequisites, and those tuples would have NULL stored for the prerequisite attribute. Thus, without having to include all the NULLs, we can just make a separate table to store the prereqs. 
+
+Question: Did you successfully add the above row into the table?
+
+Nope, the trigger prevented me from adding the third row.
+
+
+Using Select, check the data in Course_PreReq table. How many rows are there?
+2 rows
+
+Inserted 133,12 into Course prereq
+Using Select, check the data in Course_PreReq table. How many rows are there?
+3
+
+What is the result of update above? Did it work? Did you see any mutating table error?
+The update did not work and the error states that there is a mutating table error. 
+
+Exercise 3
+Do a select and display the data in Course_Prereq. Is the constraint, a course cannot have more than 2 prerequsites, enforced?
+Yes, I displayed the table and it only shows 2 rows for CourseNo 121 (so only has 2 prereqs)
+
+Is the constraint enforced on update as well?
+No, the program allowed me to modify the course number 133 into 121, allowing 121 to have three prereqs. 
+
+
+
+

@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8"/>
+      <title>Insert Book details</title>
+   </head>
+   <body>
+   <form method="post" action="http://linux.students.engr.scu.edu/~fkuan/COEN178/procBookInput.php">
+  <fieldset>
+        	<legend style="color:blue;font-size:30px">Book Title and Author</legend>
+            <label for="title">Title:</label>
+        	<input type="text" name="title" id="title">
+			<label for="author">Author:</label>
+        	<input type="text" name="author" id="author">
+        </fieldset>
+        <fieldset>
+        	<legend style="color:blue;font-size:30px">Category</legend>
+            <input type="radio" name="category" id="fiction" value="fiction">
+            <label for="fiction">Fiction</label>
+            <input type="radio" name="category" id="technical" value="technical">
+            <label for="technical">Technical</label>
+			<input type="radio" name="category" id="autobiography" value="autobiography">
+            <label for="autobiography">Autobiography</label>
+			<input type="radio" name="category" id="memoir" value="memoir">
+            <label for="memoir">Memoir</label>
+			<input type="radio" name="category" id="poem" value="poem">
+            <label for="poem">Poem</label>
+        </fieldset>
+        <fieldset>
+        	<legend style="color:blue;font-size:30px">HighLights</legend>
+            <input type="checkbox" name="hlight[]" id="locale" value="locale">
+            <label for="locale">Interesting Locales</label>
+            <input type="checkbox" name="hlight[]" id="humour" value="humour" >
+            <label for="humour">Humour</label>
+			<input type="checkbox" name="hlight[]" id="tragedy" value="tragedy">
+            <label for="tragedy">Tragedy</label>
+            <input type="checkbox" name="hlight[]" id="history" value="history" >
+            <label for="history">Historical Facts</label>
+			<input type="checkbox" name="hlight[]" id="romance" value="romance">
+            <label for="romance">Romance</label>
+        </fieldset>      
+        <fieldset>
+        	<legend style="color:blue;font-size:30px" >Comments</legend>
+        	<textarea name="comments" id="comments" rows="4" cols="50"></textarea>
+        </fieldset>
+    
+            <input type="submit" value="Submit">
+        	<input type="reset" value="Reset">
+ </form>
+   </body>
+</html>
+
