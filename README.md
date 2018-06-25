@@ -1,6 +1,6 @@
 # COEN178-Labs
 Lab assignments completed for Introduction to Database Systems (COEN 178)
-Lab assignments completed for Introduction to Database Systems (COEN 178). Note: several of these lab assignments were to modify existing 
+Note: several of these lab assignments were to modify existing 
 code. That code is credited to both Professor Rani Mikkilineni and very helpful TA Mosekola Yoyole :)
 
 The earlier labs covered topics on Relational Data Models and SQL queries. Then, from Lab 4ish onward, we learned about PLSQL and how to
